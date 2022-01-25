@@ -1,0 +1,2823 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.15)  25 JAN 2022 10:30
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main_hagedorn.tex
+(./main_hagedorn.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen135
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count176
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count177
+\leftroot@=\count178
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count179
+\DOTSCASE@=\count180
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
+\dotsspace@=\muskip16
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
+\tag@help=\toks16
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
+\andhelp@=\toks17
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks18
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+\c@theorem=\count188
+\c@corollary=\count189
+
+
+./main_hagedorn.tex:13: LaTeX Error: Command \qedsymbol undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \renewcommand\qedsymbol
+                            {$\blacksquare$}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count190
+\calc@Bcount=\count191
+\calc@Adimen=\dimen144
+\calc@Bdimen=\dimen145
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count192
+\calc@Cskip=\skip54
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
+)
+\AM@pagewidth=\dimen148
+\AM@pageheight=\dimen149
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box47
+\AM@global@opts=\toks21
+\AM@pagecnt=\count193
+\AM@toc@title=\toks22
+\c@AM@survey=\count194
+\AM@templatesizebox=\box48
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count195
+\c@@ppsavesec=\count196
+\c@@ppsaveapp=\count197
+)
+
+./main_hagedorn.tex:29: LaTeX Error: Option clash for package graphicx.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \usepackage
+                {tikz}
+The package graphicx has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [pdftex]
+Adding the global options:
+  ,pdftex
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks23
+\pgfutil@tempdima=\dimen150
+\pgfutil@tempdimb=\dimen151
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box49
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen152
+\pgf@y=\dimen153
+\pgf@xa=\dimen154
+\pgf@ya=\dimen155
+\pgf@xb=\dimen156
+\pgf@yb=\dimen157
+\pgf@xc=\dimen158
+\pgf@yc=\dimen159
+\pgf@xd=\dimen160
+\pgf@yd=\dimen161
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count198
+\c@pgf@countb=\count199
+\c@pgf@countc=\count266
+\c@pgf@countd=\count267
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
+\pgf@sys@id@count=\count268
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count269
+\pgfsyssoftpath@bigbuffer@items=\count270
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen162
+\pgfmath@count=\count271
+\pgfmath@box=\box50
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count272
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen163
+\pgf@picmaxx=\dimen164
+\pgf@picminy=\dimen165
+\pgf@picmaxy=\dimen166
+\pgf@pathminx=\dimen167
+\pgf@pathmaxx=\dimen168
+\pgf@pathminy=\dimen169
+\pgf@pathmaxy=\dimen170
+\pgf@xx=\dimen171
+\pgf@xy=\dimen172
+\pgf@yx=\dimen173
+\pgf@yy=\dimen174
+\pgf@zx=\dimen175
+\pgf@zy=\dimen176
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen177
+\pgf@path@lasty=\dimen178
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen179
+\pgf@shorten@start@additional=\dimen180
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
+\pgf@picture@serial@count=\count273
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen181
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen182
+\pgf@pt@y=\dimen183
+\pgf@pt@temp=\dimen184
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen185
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen186
+\pgf@sys@shading@range@num=\count274
+\pgf@shadingcount=\count275
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box54
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box55
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen187
+\pgf@nodesepend=\dimen188
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen189
+\pgffor@skip=\dimen190
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count276
+\pgfplotmarksize=\dimen191
+)
+\tikz@lastx=\dimen192
+\tikz@lasty=\dimen193
+\tikz@lastxsaved=\dimen194
+\tikz@lastysaved=\dimen195
+\tikz@lastmovetox=\dimen196
+\tikz@lastmovetoy=\dimen197
+\tikzleveldistance=\dimen198
+\tikzsiblingdistance=\dimen199
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count277
+\tikznumberofchildren=\count278
+\tikznumberofcurrentchild=\count279
+\tikz@fig@count=\count280
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count281
+\pgfmatrixcurrentcolumn=\count282
+\pgf@matrix@numberofcolumns=\count283
+)
+\tikz@expandcount=\count284
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/09/02 v3.5a Customizing captions (AR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/09/11 v2.0b caption3 kernel (AR)
+\captionmargin=\dimen256
+\captionmargin@=\dimen257
+\captionwidth=\dimen258
+\caption@tempdima=\dimen259
+\caption@indent=\dimen260
+\caption@parindent=\dimen261
+\caption@hangindent=\dimen262
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+)
+\c@KVtest=\count287
+\sf@farskip=\skip55
+\sf@captopadj=\dimen263
+\sf@capskip=\skip56
+\sf@nearskip=\skip57
+\c@subfigure=\count288
+\c@subfigure@save=\count289
+\c@lofdepth=\count290
+\c@subtable=\count291
+\c@subtable@save=\count292
+\c@lotdepth=\count293
+\sf@top=\skip58
+\sf@bottom=\skip59
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/06/23 v2.02h (include SVG pictures)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/07/22 v3.31 KOMA-Script package (loading files)
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\c@svg@param@lastpage=\count294
+\svg@box=\box60
+\c@svg@param@currpage=\count295
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen264
+\Hy@linkcounter=\count296
+\Hy@pagecounter=\count297
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count298
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count299
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen265
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count300
+\Field@Width=\dimen266
+\Fld@charsize=\dimen267
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+\Hy@abspage=\count301
+\c@Item=\count302
+\c@Hfootnote=\count303
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count304
+\c@bookmark@seq@number=\count305
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip60
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks35
+\inpenc@posthook=\toks36
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/09/01 3.48 The Babel package
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/09/01 3.48 Babel common definitions
+\babel@savecnt=\count306
+\U@D=\dimen268
+\l@babelnohyphens=\language86
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+)
+\bbl@dirlevel=\count307
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language21) on input line 108.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2020/08/18 v1.1.3 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
+)
+\XKV@depth=\count308
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+\c@@todonotes@numberoftodonotes=\count309
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+ Excluding comment 'comment') (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count310
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count311
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count312
+\c@listtotal=\count313
+\c@listcount=\count314
+\c@liststart=\count315
+\c@liststop=\count316
+\c@citecount=\count317
+\c@citetotal=\count318
+\c@multicitecount=\count319
+\c@multicitetotal=\count320
+\c@instcount=\count321
+\c@maxnames=\count322
+\c@minnames=\count323
+\c@maxitems=\count324
+\c@minitems=\count325
+\c@citecounter=\count326
+\c@maxcitecounter=\count327
+\c@savedcitecounter=\count328
+\c@uniquelist=\count329
+\c@uniquename=\count330
+\c@refsection=\count331
+\c@refsegment=\count332
+\c@maxextratitle=\count333
+\c@maxextratitleyear=\count334
+\c@maxextraname=\count335
+\c@maxextradate=\count336
+\c@maxextraalpha=\count337
+\c@abbrvpenalty=\count338
+\c@highnamepenalty=\count339
+\c@lownamepenalty=\count340
+\c@maxparens=\count341
+\c@parenlevel=\count342
+\blx@tempcnta=\count343
+\blx@tempcntb=\count344
+\blx@tempcntc=\count345
+\blx@maxsection=\count346
+\blx@maxsegment@0=\count347
+\blx@notetype=\count348
+\blx@parenlevel@text=\count349
+\blx@parenlevel@foot=\count350
+\blx@sectionciteorder@0=\count351
+\blx@entrysetcounter=\count352
+\blx@biblioinstance=\count353
+\labelnumberwidth=\skip61
+\labelalphawidth=\skip62
+\biblabelsep=\skip63
+\bibitemsep=\skip64
+\bibnamesep=\skip65
+\bibinitsep=\skip66
+\bibparsep=\skip67
+\bibhang=\skip68
+\blx@bcfin=\read4
+\blx@bcfout=\write5
+\blx@langwohyphens=\language87
+\c@mincomprange=\count354
+\c@maxcomprange=\count355
+\c@mincompwidth=\count356
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count357
+\c@savedafterword=\count358
+\c@annotator=\count359
+\c@savedannotator=\count360
+\c@author=\count361
+\c@savedauthor=\count362
+\c@bookauthor=\count363
+\c@savedbookauthor=\count364
+\c@commentator=\count365
+\c@savedcommentator=\count366
+\c@editor=\count367
+\c@savededitor=\count368
+\c@editora=\count369
+\c@savededitora=\count370
+\c@editorb=\count371
+\c@savededitorb=\count372
+\c@editorc=\count373
+\c@savededitorc=\count374
+\c@foreword=\count375
+\c@savedforeword=\count376
+\c@holder=\count377
+\c@savedholder=\count378
+\c@introduction=\count379
+\c@savedintroduction=\count380
+\c@namea=\count381
+\c@savednamea=\count382
+\c@nameb=\count383
+\c@savednameb=\count384
+\c@namec=\count385
+\c@savednamec=\count386
+\c@translator=\count387
+\c@savedtranslator=\count388
+\c@shortauthor=\count389
+\c@savedshortauthor=\count390
+\c@shorteditor=\count391
+\c@savedshorteditor=\count392
+\c@labelname=\count393
+\c@savedlabelname=\count394
+\c@institution=\count395
+\c@savedinstitution=\count396
+\c@lista=\count397
+\c@savedlista=\count398
+\c@listb=\count399
+\c@savedlistb=\count400
+\c@listc=\count401
+\c@savedlistc=\count402
+\c@listd=\count403
+\c@savedlistd=\count404
+\c@liste=\count405
+\c@savedliste=\count406
+\c@listf=\count407
+\c@savedlistf=\count408
+\c@location=\count409
+\c@savedlocation=\count410
+\c@organization=\count411
+\c@savedorganization=\count412
+\c@origlocation=\count413
+\c@savedoriglocation=\count414
+\c@origpublisher=\count415
+\c@savedorigpublisher=\count416
+\c@publisher=\count417
+\c@savedpublisher=\count418
+\c@language=\count419
+\c@savedlanguage=\count420
+\c@origlanguage=\count421
+\c@savedoriglanguage=\count422
+\c@pageref=\count423
+\c@savedpageref=\count424
+\shorthandwidth=\skip69
+\shortjournalwidth=\skip70
+\shortserieswidth=\skip71
+\shorttitlewidth=\skip72
+\shortauthorwidth=\skip73
+\shorteditorwidth=\skip74
+\locallabelnumberwidth=\skip75
+\locallabelalphawidth=\skip76
+\localshorthandwidth=\skip77
+\localshortjournalwidth=\skip78
+\localshortserieswidth=\skip79
+\localshorttitlewidth=\skip80
+\localshortauthorwidth=\skip81
+\localshorteditorwidth=\skip82
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-09-06 L3 programming layer (loader) 
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-11 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count425
+\l__pdf_internal_box=\box61
+))
+Package biblatex Info: expl3
+(biblatex)             2020-09-06 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+Package biblatex Info: Trying to load expl3 case changing code...
+Package biblatex Info: ... file 'blx-case-expl3.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-case-expl3.def (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-05-15 L3 Experimental document command parser
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex
+\l__xparse_current_arg_int=\count426
+\g__xparse_grabber_int=\count427
+\l__xparse_m_args_int=\count428
+\l__xparse_v_nesting_int=\count429
+))
+File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+\c@textcitecount=\count430
+\c@textcitetotal=\count431
+\c@textcitemaxnames=\count432
+\c@biburlbigbreakpenalty=\count433
+\c@biburlbreakpenalty=\count434
+\c@biburlnumpenalty=\count435
+\c@biburlucpenalty=\count436
+\c@biburllcpenalty=\count437
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count438
+)
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+File: alphabetic.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count439
+\c@bbx:relatedtotal=\count440
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+File: alphabetic.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/09/07 v2.0 Multi-file projects (package)
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count441
+\@quotereset=\count442
+(latexbuild/main_hagedorn.aux)
+\openout1 = `main_hagedorn.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+\AtBeginShipoutBox=\box62
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count443
+\scratchdimen=\dimen269
+\scratchbox=\box63
+\nofMPsegments=\count444
+\nofMParguments=\count445
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count446
+\MPscratchDim=\dimen270
+\MPnumerator=\count447
+\makeMPintoPDFobject=\count448
+\everyMPtoPDFconversion=\toks40
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 74.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count449
+)
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
+ (latexbuild/main_hagedorn.out) (latexbuild/main_hagedorn.out)
+\@outlinefile=\write6
+\openout6 = `main_hagedorn.out'.
+
+
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 74.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `main_hagedorn.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main_hagedorn.bbl' found.
+ (latexbuild/main_hagedorn.bbl)
+Package biblatex Info: Reference section=0 on input line 74.
+Package biblatex Info: Reference segment=0 on input line 74.
+ (latexbuild/main_hagedorn.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (0.71802pt too wide) detected at line 24
+ []\OT1/cmr/m/n/12 xvii
+ []
+
+
+Overfull \hbox (0.71802pt too wide) detected at line 28
+ []\OT1/cmr/m/n/12 xxii
+ []
+
+
+Overfull \hbox (6.91934pt too wide) detected at line 32
+ []\OT1/cmr/m/n/12 xxvii
+ []
+
+
+Overfull \hbox (3.65549pt too wide) detected at line 34
+ []\OT1/cmr/m/n/12 xxix
+ []
+
+
+Overfull \hbox (3.65549pt too wide) detected at line 36
+ []\OT1/cmr/m/n/12 xxix
+ []
+
+
+Overfull \hbox (10.1832pt too wide) detected at line 38
+ []\OT1/cmr/m/n/12 xxxiii
+ []
+
+
+Overfull \hbox (10.1832pt too wide) detected at line 40
+ []\OT1/cmr/m/n/12 xxxiii
+ []
+
+
+Overfull \hbox (6.59296pt too wide) detected at line 42
+ []\OT1/cmr/m/n/12 xxxv
+ []
+
+
+Overfull \hbox (9.85681pt too wide) detected at line 44
+ []\OT1/cmr/m/n/12 xxxvi
+ []
+
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (0.71802pt too wide) detected at line 58
+ []\OT1/cmr/m/n/12 xlvi
+ []
+
+)
+\tf@toc=\write7
+\openout7 = `main_hagedorn.toc'.
+
+ [2] [3] (./hag_intro.tex
+./hag_intro.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_intro.tex:2: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_intro.tex:3: LaTeX Error: Command \theorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \newtheorem{theorem}{Theorem}[section]
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_intro.tex:4: LaTeX Error: Command \corollary already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \newtheorem{corollary}{Corollary}[theorem]
+                                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_intro.tex:5: LaTeX Error: Command \lemma already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \newtheorem{lemma}[theorem]{Lemma}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_intro.tex:6: Missing $ inserted.
+<inserted text> 
+                $
+l.6 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_intro.tex:7: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (./hag_wavepackets.tex
+./hag_wavepackets.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_wavepackets.tex:2: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_wavepackets.tex:3: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage
+               {amssymb}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_wavepackets.tex:4: LaTeX Error: Command \theorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \newtheorem{theorem}{Theorem}[section]
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_wavepackets.tex:5: LaTeX Error: Command \lemma already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \newtheorem{lemma}[theorem]{Lemma}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_wavepackets.tex:6: Undefined control sequence.
+l.6 \theoremstyle
+                 {definition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./hag_wavepackets.tex:8: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage
+               {amsthm,xpatch}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_wavepackets.tex:9: Undefined control sequence.
+l.9 \xpatchcmd
+              {\proof}{\itshape}{\bfseries}{}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./hag_wavepackets.tex:9: LaTeX Error: Command \itshape invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \xpatchcmd{\proof}{\itshape
+                               }{\bfseries}{}{}
+Please use the math alphabet \mathit instead of the \itshape command. 
+
+
+./hag_wavepackets.tex:9: LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \xpatchcmd{\proof}{\itshape}{\bfseries
+                                          }{}{}
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+
+./hag_wavepackets.tex:11: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage
+                {comment}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_wavepackets.tex:12: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \usepackage
+                [
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_wavepackets.tex:17: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \addbibresource
+                    {Hagedorn.bib}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_wavepackets.tex:18: Missing $ inserted.
+<inserted text> 
+                $
+l.18 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (102.5387pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/n/12 [./main$[]\OML/cmm/m/it/12 agedorn:tex\OT1/cmr/m/n/12 ][][][][][][][][][][][][\OML/cmm/m/it/12 backend \OT1/cmr/m/n/12 =
+ []
+
+[4]
+
+./hag_wavepackets.tex:19: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[5]
+
+./hag_wavepackets.tex:70: LaTeX Error: Environment proof undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \begin{proof}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_wavepackets.tex:83: LaTeX Error: \begin{document} on input line 19 ended by \end{proof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{proof}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 71--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--108
+
+ []
+
+[6] [7] (./hag_dynamics.tex
+./hag_dynamics.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_dynamics.tex:2: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_dynamics.tex:3: Missing $ inserted.
+<inserted text> 
+                $
+l.3 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_dynamics.tex:4: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--49
+
+ []
+
+
+Overfull \hbox (1.71877pt too wide) in paragraph at lines 29--49
+\OT1/cmr/m/n/12 Since $[] = []^^A(\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 ) = []\OML/cmm/m/it/12 c$ \OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 R$\OT1/cmr/m/n/12 , the Baker-Campbell-Hausdorf
+ []
+
+[8]
+Overfull \hbox (45.72614pt too wide) in paragraph at lines 138--139
+ [] 
+ []
+
+[9] [10]
+./hag_dynamics.tex:208: You can't use `macro parameter character #' in horizontal mode.
+<argument> ...ints independent of the dimension?##
+                                                   what if I do integration ...
+l.208 justified?}
+                 
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--234
+
+ []
+
+[11] [12]
+./hag_dynamics.tex:236: Misplaced alignment tab character &.
+l.236 ..._{k + \langle j \rangle} \right)_{j=1}^d&
+                                                  =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[13]
+Overfull \hbox (2.85822pt too wide) detected at line 362
+[]
+ []
+
+
+Overfull \hbox (21.88474pt too wide) detected at line 393
+[]
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 436--448
+
+ []
+
+) (./hag_recursion.tex
+./hag_recursion.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_recursion.tex:2: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_recursion.tex:3: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage
+               {pgfplots}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_recursion.tex:4: Undefined control sequence.
+l.4 \pgfplotsset
+                {compat=1.11}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./hag_recursion.tex:5: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_recursion.tex:6: Missing $ inserted.
+<inserted text> 
+                $
+l.6 \subsection
+               {Numerical/Algorithmic implementation}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hag_recursion.tex:6: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.6 \subsection
+               {Numerical/Algorithmic implementation}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[15] (./figures/recursion-impleentation.pdf_tex
+<./figures/recursion-impleentation.pdf, id=309, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/recursion-impleentation.pdf Graphic file (type pdf)
+<use ./figures/recursion-impleentation.pdf, page 1>
+Package pdftex.def Info: ./figures/recursion-impleentation.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 195.00438pt.
+<./figures/recursion-impleentation.pdf, id=310, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/recursion-impleentation.pdf Graphic file (type pdf)
+<use ./figures/recursion-impleentation.pdf, page 2>
+Package pdftex.def Info: ./figures/recursion-impleentation.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 390.0pt x 195.00438pt.
+<./figures/recursion-impleentation.pdf, id=311, page=3, 682.86612pt x 341.43306pt>
+File: ./figures/recursion-impleentation.pdf Graphic file (type pdf)
+<use ./figures/recursion-impleentation.pdf, page 3>
+Package pdftex.def Info: ./figures/recursion-impleentation.pdf , page3 used on input line 65.
+(pdftex.def)             Requested size: 390.0pt x 195.00438pt.
+) [16 <./figures/recursion-impleentation.pdf> <./figures/recursion-impleentation.pdf> <./figures/recursion-impleentation.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 38--50
+
+ []
+
+./hag_recursion.tex:86: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.86   \end{split}
+                  
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./hag_recursion.tex:86: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.86   \end{split}
+                  
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+[17]
+./hag_recursion.tex:130: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.130   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./hag_recursion.tex:130: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.130   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./hag_recursion.tex:178: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.178   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./hag_recursion.tex:178: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.178   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+[18]
+./hag_recursion.tex:273: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.273   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./hag_recursion.tex:273: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.273   \end{split}
+                   
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+[19] (./figures/integral_recursion.pdf_tex
+<./figures/integral_recursion.pdf, id=340, page=1, 682.86612pt x 341.43306pt>
+File: ./figures/integral_recursion.pdf Graphic file (type pdf)
+<use ./figures/integral_recursion.pdf, page 1>
+Package pdftex.def Info: ./figures/integral_recursion.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 195.00438pt.
+<./figures/integral_recursion.pdf, id=341, page=2, 682.86612pt x 341.43306pt>
+File: ./figures/integral_recursion.pdf Graphic file (type pdf)
+<use ./figures/integral_recursion.pdf, page 2>
+Package pdftex.def Info: ./figures/integral_recursion.pdf , page2 used on input line 61.
+(pdftex.def)             Requested size: 390.0pt x 195.00438pt.
+)
+Overfull \hbox (23.44525pt too wide) in paragraph at lines 299--369
+\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 '[]; W'[]\OMS/cmsy/m/n/12 i$ $ $ []$h\OML/cmm/m/it/12 '[]; W'[]\OMS/cmsy/m/n/12 i$[]\OT1/cmr/m/n/12 , $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x'[]; W'[]\OMS/cmsy/m/n/12 i$ $ $ []$h\OML/cmm/m/it/12 x'[]; W'[]\OMS/cmsy/m/n/12 i$[]\OT1/cmr/m/n/12 , $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x[]'[]; W'[]\OMS/cmsy/m/n/12 i$ $ $ []$h\OML/cmm/m/it/12 x[]'[]; W'[]\OMS/cmsy/m/n/12 i$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--369
+
+ []
+
+[20 <./figures/integral_recursion.pdf> <./figures/integral_recursion.pdf>] [21] [22] (./plots/gaussian.tex
+\gptboxheight=\skip83
+\gptboxwidth=\skip84
+\gptboxtext=\box64
+</home/s1992054/PhD/year-1/hagedorn/plots/gaussian.pdf, id=360, 433.62pt x 505.89pt>
+File: /home/s1992054/PhD/year-1/hagedorn/plots/gaussian.pdf Graphic file (type pdf)
+<use /home/s1992054/PhD/year-1/hagedorn/plots/gaussian.pdf>
+Package pdftex.def Info: /home/s1992054/PhD/year-1/hagedorn/plots/gaussian.pdf  used on input line 123.
+(pdftex.def)             Requested size: 433.61894pt x 505.88875pt.
+)
+Overfull \hbox (42.60468pt too wide) in paragraph at lines 125--408
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--424
+
+ []
+
+[23 </home/s1992054/PhD/year-1/hagedorn/plots/gaussian.pdf>])
+./main_hagedorn.tex:158: Extra \endgroup.
+\subfiles@subfile ... }{\filename@base }\endgroup 
+                                                  
+l.158       \subfile{hag_recursion}
+                                   
+Things are pretty mixed up, but I think the worst is over.
+
+[24] (./hag_avoided.tex
+./hag_avoided.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_avoided.tex:2: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_avoided.tex:3: LaTeX Error: Command \theorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \newtheorem{theorem}{Theorem}[section]
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_avoided.tex:4: LaTeX Error: Command \corollary already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \newtheorem{corollary}{Corollary}[theorem]
+                                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_avoided.tex:5: LaTeX Error: Command \lemma already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \newtheorem{lemma}[theorem]{Lemma}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_avoided.tex:6: Missing $ inserted.
+<inserted text> 
+                $
+l.6 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_avoided.tex:7: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--50
+
+ []
+
+[25]
+./hag_avoided.tex:54: Missing $ inserted.
+<inserted text> 
+                $
+l.54 where $c_k^{\pm} \in \mathbb{C}$ \xi
+                                          \in \mathbb{R}^d$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (12.78574pt too wide) in paragraph at lines 71--78
+\OT1/cmr/m/n/12 that a co-or-di-nate axis is par-al-lel to $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )$, the mo-men-tum of the wavepacket
+ []
+
+[26]) (./hag_rotation.tex
+./hag_rotation.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_rotation.tex:2: LaTeX Error: Command \theorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \newtheorem{theorem}{Theorem}[section]
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_rotation.tex:3: LaTeX Error: Command \corollary already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \newtheorem{corollary}{Corollary}[theorem]
+                                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_rotation.tex:4: LaTeX Error: Command \lemma already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \newtheorem{lemma}[theorem]{Lemma}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_rotation.tex:5: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_rotation.tex:6: Missing $ inserted.
+<inserted text> 
+                $
+l.6 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_rotation.tex:7: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[27]
+
+./hag_rotation.tex:132: LaTeX Error: \begin{document} on input line 7 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+./main_hagedorn.tex:162: Extra \endgroup.
+\subfiles@subfile ... }{\filename@base }\endgroup 
+                                                  
+l.162       \subfile{hag_rotation}
+                                   % needs to be further justified
+Things are pretty mixed up, but I think the worst is over.
+
+(./hag_projection.tex
+./hag_projection.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_projection.tex:3: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage
+               {comment}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_projection.tex:4: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage
+               [
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_projection.tex:9: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \addbibresource
+                   {Hagedorn.bib}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_projection.tex:10: Missing $ inserted.
+<inserted text> 
+                $
+l.10 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (48.59196pt too wide) in paragraph at lines 1--10
+\OT1/cmr/m/n/12 [./main$[]\OML/cmm/m/it/12 agedorn:tex\OT1/cmr/m/n/12 ][][][\OML/cmm/m/it/12 backend \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 biber; style \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 alphabetic; sorting \OT1/cmr/m/n/12 =
+ []
+
+
+./hag_projection.tex:11: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Pi' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 77.
+
+[29]
+Overfull \hbox (96.22603pt too wide) detected at line 136
+\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^X[]; ^^W\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^X[]\OT1/cmr/m/n/12 ); \OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 ) = [] [] [] [] [](\OML/cmm/m/it/12 ^^X[]\OT1/cmr/m/n/12 )^^B(\OML/cmm/m/it/12 ^^X[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ^^N\OT1/cmr/m/n/12 ) [] [] []
+ []
+
+[30] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 281--287
+
+ []
+
+
+Overfull \hbox (30.74916pt too wide) detected at line 342
+[]
+ []
+
+[32]
+Overfull \hbox (71.75197pt too wide) detected at line 407
+[]
+ []
+
+[33]
+Overfull \hbox (122.65494pt too wide) detected at line 437
+[]
+ []
+
+[34]
+
+./hag_projection.tex:505: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.505 C
+       ould think of solvin inner integral using an asymptotic expansion
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[35]
+./hag_projection.tex:540: Double superscript.
+<argument> ...{11}(-4\delta + p_1^2 + p_1^\prime ^
+                                                  2) - 2 (p_1 + p_1^\prime )...
+l.540   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./hag_projection.tex:540: Double superscript.
+<argument> ...11}(- 4\delta + p_1^2 - p_1^\prime ^
+                                                  2) + 2\left ( q_1 + \sum _...
+l.540   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./hag_projection.tex:540: Double superscript.
+<argument> ...{11}(-4\delta + p_1^2 + p_1^\prime ^
+                                                  2) - 2 (p_1 + p_1^\prime )...
+l.540   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./hag_projection.tex:540: Double superscript.
+<argument> ...11}(- 4\delta + p_1^2 - p_1^\prime ^
+                                                  2) + 2\left ( q_1 + \sum _...
+l.540   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+Overfull \hbox (22.34937pt too wide) detected at line 541
+[]
+ []
+
+[36] [37])
+Overfull \hbox (19.24718pt too wide) in paragraph at lines 167--167
+\OT1/cmr/m/n/12 Adiabatic Scat-ter-ing Wave Func-tions in a Born-Oppenheimer Model''.
+ []
+
+
+Overfull \hbox (4.42915pt too wide) in paragraph at lines 167--167
+\OT1/cmr/m/n/12 mat-ics. Z^^?urich, Switzer-land: Eu-ro-pean Math-e-mat-i-cal So-ci-ety, 2008.
+ []
+
+[38]
+Overfull \hbox (18.38144pt too wide) in paragraph at lines 167--167
+\OT1/cmr/m/n/12 pp. 3027{3041. \OT1/cmr/m/sc/12 issn\OT1/cmr/m/n/12 : 1064-8275, 1095-7197. \OT1/cmr/m/sc/12 doi\OT1/cmr/m/n/12 : [][]$\OT1/cmtt/m/n/12 10 . 1137 / 080729724$[][]\OT1/cmr/m/n/12 .
+ []
+
+
+Overfull \hbox (5.38779pt too wide) in paragraph at lines 167--167
+[]\OT1/cmr/m/n/12 Raoul Bourquin, Vasile Grad-i-naru, and George A. Hage-dorn. ``Non-
+ []
+
+
+Overfull \hbox (14.16336pt too wide) in paragraph at lines 167--167
+[]\OT1/cmr/m/n/12 Raoul Bourquin. ``Nu-mer-i-cal Al-go-rithms for Semi-clas-si-cal Wavepack-
+ []
+
+[39]
+Overfull \hbox (6.59541pt too wide) in paragraph at lines 167--167
+[]\OT1/cmr/m/n/12 Clotilde Fermanian-Kammerer, Car-o-line Lasser, and Di-dier Robert.
+ []
+
+
+Overfull \hbox (9.49986pt too wide) in paragraph at lines 167--167
+\OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : [][]$\OT1/cmtt/m/n/12 http : / / arxiv . org / abs / 2001 . 07484$[][] \OT1/cmr/m/n/12 (vis-ited on 06/28/2021). 
+ []
+
+./main_hagedorn.tex:168: Undefined control sequence.
+l.168   \chapter
+                {Some Appendix}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./hag_transmitted.tex
+./hag_transmitted.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \document[./main_
+                     hagedorn.tex]{subfiles}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_transmitted.tex:2: LaTeX Error: Command \theorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \newtheorem{theorem}{Theorem}[section]
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_transmitted.tex:3: LaTeX Error: Command \corollary already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \newtheorem{corollary}{Corollary}[theorem]
+                                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_transmitted.tex:4: LaTeX Error: Command \lemma already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \newtheorem{lemma}[theorem]{Lemma}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./hag_transmitted.tex:5: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage
+               {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hag_transmitted.tex:6: Missing $ inserted.
+<inserted text> 
+                $
+l.6 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./hag_transmitted.tex:7: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[40]
+./hag_transmitted.tex:60: Extra }, or forgotten \right.
+<argument> ...}{\epsilon }|\xi _1 - \nu (\xi _1)|}
+                                                   \right ) \times \\ & \sum...
+l.60   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:60: Extra }, or forgotten \right.
+<argument> ...}{\epsilon }|\xi _1 - \nu (\xi _1)|}
+                                                   \right ) \times \\ & \var...
+l.60   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:60: Extra }, or forgotten \right.
+<argument> ...}{\epsilon }|\xi _1 - \nu (\xi _1)|}
+                                                   \right ) \times \\ & \sum...
+l.60   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:60: Extra }, or forgotten \right.
+<argument> ...}{\epsilon }|\xi _1 - \nu (\xi _1)|}
+                                                   \right ) \times \\ & \var...
+l.60   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:92: Extra }, or forgotten \right.
+<argument> ...a \epsilon }|\xi _1 - \nu (\xi _1)|}
+                                                   \right ) \exp {\left (-\f...
+l.92   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:92: Extra }, or forgotten \right.
+<argument> ...a \epsilon }(\xi _1 - \nu (\xi _1))}
+                                                   \right ) \times \\ & \sum...
+l.92   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:92: Missing } inserted.
+<inserted text> 
+                }
+l.92   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:92: Missing } inserted.
+<inserted text> 
+                }
+l.92   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:92: Extra }, or forgotten \right.
+<argument> ...a \epsilon }|\xi _1 - \nu (\xi _1)|}
+                                                   \right ) \exp {\left (-\f...
+l.92   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:92: Extra }, or forgotten \right.
+<argument> ...a \epsilon }(\xi _1 - \nu (\xi _1))}
+                                                   \right ) \times \\ & \sum...
+l.92   \end{split}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hag_transmitted.tex:92: Missing } inserted.
+<inserted text> 
+                }
+l.92   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./hag_transmitted.tex:92: Missing } inserted.
+<inserted text> 
+                }
+l.92   \end{split}
+                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+Overfull \hbox (20.30998pt too wide) detected at line 93
+[]
+ []
+
+[41])
+Underfull \hbox (badness 10000) in paragraph at lines 175--215
+
+ []
+
+[42]
+./main_hagedorn.tex:243: Missing } inserted.
+<inserted text> 
+                }
+l.243   \end{split}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main_hagedorn.tex:243: Extra \right.
+<argument> ... \varphi ^\epsilon _{k + 1} \right )
+                                                   &= \sqrt {\frac {2}{\epsi...
+l.243   \end{split}
+                   
+I'm ignoring a \right that had no matching \left.
+
+./main_hagedorn.tex:243: Missing { inserted.
+<inserted text> 
+                {
+l.243   \end{split}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./main_hagedorn.tex:243: Missing } inserted.
+<inserted text> 
+                }
+l.243   \end{split}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main_hagedorn.tex:243: Extra \right.
+<argument> ...k}{k + 1}} \varphi _{k - 1} \right )
+                                                   \\ &= ... \\ & \varphi _1...
+l.243   \end{split}
+                   
+I'm ignoring a \right that had no matching \left.
+
+./main_hagedorn.tex:243: Missing { inserted.
+<inserted text> 
+                {
+l.243   \end{split}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./main_hagedorn.tex:243: Missing } inserted.
+<inserted text> 
+                }
+l.243   \end{split}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main_hagedorn.tex:243: Extra \right.
+<argument> ... \varphi ^\epsilon _{k + 1} \right )
+                                                   &= \sqrt {\frac {2}{\epsi...
+l.243   \end{split}
+                   
+I'm ignoring a \right that had no matching \left.
+
+./main_hagedorn.tex:243: Missing { inserted.
+<inserted text> 
+                {
+l.243   \end{split}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+./main_hagedorn.tex:243: Missing } inserted.
+<inserted text> 
+                }
+l.243   \end{split}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main_hagedorn.tex:243: Extra \right.
+<argument> ...k}{k + 1}} \varphi _{k - 1} \right )
+                                                   \\ &= ... \\ & \varphi _1...
+l.243   \end{split}
+                   
+I'm ignoring a \right that had no matching \left.
+
+./main_hagedorn.tex:243: Missing { inserted.
+<inserted text> 
+                {
+l.243   \end{split}
+                   
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+Overfull \hbox (10.96593pt too wide) detected at line 244
+[]
+ []
+
+[43]
+
+./main_hagedorn.tex:338: LaTeX Error: \begin{split} on input line 271 ended by \end{cases}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.338     \end{cases}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./main_hagedorn.tex:339: LaTeX Error: \begin{equation} on input line 270 ended by \end{split}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339      \end{split}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main_hagedorn.tex:339: Missing $ inserted.
+<inserted text> 
+                $
+l.339      \end{split}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main_hagedorn.tex:339: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.339      \end{split}
+                      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./main_hagedorn.tex:339: Missing $ inserted.
+<inserted text> 
+                $
+l.339      \end{split}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./main_hagedorn.tex:339: Missing $ inserted.
+<inserted text> 
+                $
+l.339      \end{split}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./main_hagedorn.tex:340: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340   \end{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main_hagedorn.tex:340: You can't use `\eqno' in horizontal mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.340   \end{equation}
+                      
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+./main_hagedorn.tex:340: LaTeX Error: \begin{appendices} on input line 167 ended by \end{equation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340   \end{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main_hagedorn.tex:340: Missing $ inserted.
+<inserted text> 
+                $
+l.340   \end{equation}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main_hagedorn.tex:340: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.340   \end{equation}
+                      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[44] (./plots/hagedorn_coeff.tex
+<plots/hagedorn_coeff.pdf, id=542, 361.35pt x 216.81pt>
+File: plots/hagedorn_coeff.pdf Graphic file (type pdf)
+<use plots/hagedorn_coeff.pdf>
+Package pdftex.def Info: plots/hagedorn_coeff.pdf  used on input line 126.
+(pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.365 \subsection{One dimensional case}
+                                       pdfTeX warning (ext4): destination with the same identifier (name{equation.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \begin{equation}
+                      
+Overfull \hbox (7.54947pt too wide) detected at line 391
+[]
+ []
+
+[45]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.393 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.393 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.393 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.393 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.400 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.400 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.400 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.400 \begin{equation}
+                       [46 <./plots/hagedorn_coeff.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.416 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.416 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.416 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.416 \begin{equation}
+                      
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
+
+ []
+
+[47]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \begin{equation}
+                      
+Underfull \hbox (badness 10000) in paragraph at lines 495--505
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.505 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.505 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.505 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.505 \begin{equation}
+                       [48]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.525 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.525 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.525 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.525 \begin{equation}
+                      
+./main_hagedorn.tex:536: Double superscript.
+<argument> ...(\xi _1) \left ( \sqrt {p_1^\prime ^
+                                                  2 - 4\delta } - p_1 + \fra...
+l.536   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./main_hagedorn.tex:536: Double superscript.
+<argument> \sqrt {p_1^\prime ^
+                              2 - 4\delta }
+l.536   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./main_hagedorn.tex:536: Double superscript.
+<argument> ...(\xi _1) \left ( \sqrt {p_1^\prime ^
+                                                  2 - 4\delta } - p_1 + \fra...
+l.536   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./main_hagedorn.tex:536: Double superscript.
+<argument> \sqrt {p_1^\prime ^
+                              2 - 4\delta }
+l.536   \end{split}
+                   
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.543 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.543 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.543 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.543 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.558 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.558 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.558 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.558 \begin{equation}
+                      
+Overfull \hbox (33.07242pt too wide) detected at line 620
+[]
+ []
+
+[49]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.622 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.622 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.622 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.622 \begin{equation}
+                       [50]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.671 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.671 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.671 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.671 \begin{equation}
+                      
+Underfull \hbox (badness 10000) in paragraph at lines 675--677
+
+ []
+
+
+Overfull \hbox (6.21776pt too wide) in paragraph at lines 677--677
+[]\OT1/cmr/bx/n/17.28 Transmitted wavepacket re-cur-rence re-la-tion
+ []
+
+
+Overfull \hbox (37.44572pt too wide) detected at line 710
+[]
+ []
+
+
+Overfull \hbox (37.44572pt too wide) detected at line 749
+[]
+ []
+
+
+./main_hagedorn.tex:752: LaTeX Error: \begin{document} ended by \end{appendices}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.752 \end{appendices}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main_hagedorn.tex:752: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.752 \end{appendices}
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+[51]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 754.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 754.
+ (latexbuild/main_hagedorn.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 754.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 754.
+Package rerunfilecheck Info: File `main_hagedorn.out' has not changed.
+(rerunfilecheck)             Checksum: AA5C187C92BA12A261D8915D3C753D3B;2370.
+Package logreq Info: Writing requests to 'main_hagedorn.run.xml'.
+\openout1 = `main_hagedorn.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 754.
+ ) 
+Here is how much of TeX's memory you used:
+ 29203 strings out of 480876
+ 561160 string characters out of 5907582
+ 1255509 words of memory out of 5000000
+ 44109 multiletter control sequences out of 15000+600000
+ 548662 words of font info for 78 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,28n,88p,1276b,1966s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on latexbuild/main_hagedorn.pdf (51 pages, 544467 bytes).
+PDF statistics:
+ 685 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 161 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,41 @@
+\document[./main_hagedorn.tex]{subfiles}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\begin{document}
+%The algorithms outlined in   
+%\cite{betzNonadiabaticTransitionsMultiple2019} 
+%into the 
+%algorithm as outline in Chapter V of \cite{lubichQuantumClassicalMolecular2008}.
+%In \cite{hagedornRaisingLoweringOperators1998}, Hagedorn considered a particular parametrisation 
+%for the covariance matrix of a complex semi-classical Gaussian wavepacket. Such parametrization 
+%lends itself to useful consequences for the solution of the Schrodinger equation. 
+%\textcolor{red}{Comparing to the variational gaussian approximation, interpretation as 
+%orthogonal and symplectic projection will point to the gain in this parametrization}
+The superadiabatic formulas of equation  ... allow us to to effectively reduce a 
+coupled systems of two PDEs to two uncoupled PDEs, within the error made by the approximation 
+of the transmitted wavepacket. In this framework, the numerical challenge 
+stems from solving the one level BO dynamics efficiently. 
+In the literature there are various approaches for doing this, often revolving around 
+Gaussian basis sets. \textcolor{red}{I actually do not know about any methods, this 
+is something to look into}.
+In this chapter we explore an approach which is rather unknown within the Chemistry community 
+and absent from any QMD commercial or open-source software package. 
+It consists in evolving a set of parametrised orthogonal basis functions, known as Hagedorn wavepackets. 
+Precisely, these are the d-dimensional equivalent of Hermite polynomials, eigenfunctions of 
+the Harmonic oscillator [reference].
+When the potential is quadratic one has to evolve only the set of parameters according to 
+a system of ODEs. 
+For more general potentials, one accounts for the non-quadratic remainder term 
+by applying the Dirac-Frenkel variational principle; this leads to a set of integrals 
+involving the non-quadratic remainder term [reference].  
+Our contribution consists in merging the Superadiabatic formula with 
+this classical evolution of the Hagedorn wavepackets. 
+In Section 1 we introduce the Hagedorn wavepackets and their properties as 
+outlined in \cite{hagedornRaisingLoweringOperators1998}. In Section 2 
+we address the projection of the transmitted wavepacket back onto an 
+Hagedorn basis. The nature of these integrals is similar to the ones 
+encountered in accounting the non-quadratic terms of the quadratic potential.
+\end{document}

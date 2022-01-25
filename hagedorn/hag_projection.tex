@@ -1,0 +1,660 @@
+\document[./main_hagedorn.tex]{subfiles}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{comment}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{Hagedorn.bib}
+
+\begin{document}
+
+%%%%%%%%
+%
+%
+%       PROJECTING TRANSMITTED WAVEPACKET ONTO A HAGEDORN BASIS SET
+%
+%
+%%%%%%%%
+%%%%%%%%
+%
+%
+%       PROJECTING TRANSMITTED WAVEPACKET ONTO A HAGEDORN BASIS SET
+%                 CHANGE OF BASIS/CARTESIAN CO-ORDINATES
+%
+%
+%%%%%%%%
+%%%%%%%%
+%
+%
+%       PROJECTING TRANSMITTED WAVEPACKET ONTO A HAGEDORN BASIS SET
+%                 PROJECTION BY COMPUTING INNER PRODUCT
+%
+%
+%%%%%%%%
+\subsection{Projecting onto Hagedorn basis}
+Upon detection of the avoided crossing and application of the transmission 
+formula, the transmitted wavepacket $\hat{\psi}^{\mp}$ needs to be projected 
+back onto a Hagedorn basis set $\Phi[\hat{\Pi}^\prime] =
+\{\varphi_l[\hat{\Pi}^\prime]\}_{l \in \mathcal{L}}$ 
+in order for it to be evolved away from the crossing using Hagedorn dynamics.  
+Since $\Phi[\hat{\Pi}^\prime]$ is an orthonormal set,
+the closest point in its linear span to the transmitted 
+wavepacket is given by 
+\begin{equation}
+  P_{\Phi}\hat{\psi}^\mp := 
+  \sum_{l \in \mathcal{L}} \left \langle \frac{\hat{\psi}^\mp}{\|\hat{\psi}^\mp \|} ,
+  \varphi_l[\hat{\Pi}^\prime]  
+  \right \rangle \varphi_l[\hat{\Pi}^\prime]
+\end{equation}
+and it is unique since a linear subspace is convex.
+The coefficients 
+$a_l := \left \langle \frac{\hat{\psi}^\mp}{\|\hat{\psi}^\mp \|} ,
+\varphi_l[\hat{\Pi}^\prime] \right \rangle $
+are known as Fourier coefficients.
+%\begin{equation} 
+%  \begin{split}
+%    \\
+%        =&\int_{\mathbb{R}^d} \psi \text{ } 
+%    \overline{\varphi_l[\hat{\Pi}^\prime]} d\xi
+%  \end{split}
+%\end{equation}
+The parameters $\hat{\Pi}$ for the new sub-basis set may take different 
+values than the ones for the incoming wavepacket so as to minimise 
+the number of Fourier coefficients $a_l$ needed to represent the 
+transmitted wavepacket. This is further discussed in the next 
+subsection.\textcolor{red}{explain better} 
+%%%%%%%%
+%
+%
+%       PROJECTING TRANSMITTED WAVEPACKET ONTO A HAGEDORN BASIS SET
+%                 COMPUTE NEW PARAMETER SET p,Q,P 
+%
+%
+%%%%%%%%
+
+\subsubsection{Different parameter set $\Pi$}
+\textbf{Constant eigenvalues - do it for the general case }
+\\
+Given the considerations outlined in the previous subsection 
+we consider a different parameter set for the Hagedorn basis 
+corresponding to the transmitted wavepacket. More precisey we change 
+the entry of the momentum parameter $p$ corresponding to the direction of motion 
+of the wavepacket at the crossing, 
+$\{p, q, P, Q \} \mapsto \{ p^\prime, q, P, Q \} $ where 
+$p^\prime_{i} = p_{i} \text{ } \forall \text{ } 1 < i  \leq d$
+while
+\begin{equation}
+  \begin{split}
+    p_1^\prime &= \langle \xi \hat{\psi}^\mp(\xi_1), \hat{\psi}^{\mp}(\xi_1) \rangle    
+    \\
+    &= ...
+  \end{split}
+\end{equation}
+ The Fourier coefficients are then given by 
+\begin{equation}
+  \begin{split}
+    a_l =& \left \langle \frac{\hat{\psi}^\mp}{\|\hat{\psi}^\mp \|} ,
+      \varphi_l[\hat{\Pi}^\prime] \right \rangle 
+    \\
+    &=
+    \frac{1}{\|\hat{\psi}^\mp \|}
+    \left \langle \sum_{k \in \mathcal{K}}c^{\pm}_{k}(t_c) 
+    f(\xi_1, \nu(\xi_1); \delta)
+    \varphi_k^\epsilon[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi}), 
+  \varphi_l^\epsilon[\hat{\Pi}^\prime](\xi)  \right \rangle
+    \\
+    &=
+    \frac{1}{\|\hat{\psi}^\mp \|}
+    \sum_{k \in \mathcal{K}}c^{\pm}_{k}(t_c)
+    \left \langle  
+    f(\xi_1, \nu(\xi_1); \delta)
+    \varphi_k^\epsilon[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi}), 
+  \varphi_l^\epsilon[\hat{\Pi}^\prime](\xi)  \right \rangle
+    %\\
+    %&=
+    %\frac{1}{\|\hat{\psi}^\mp \|}
+    %\sum_{k \in \mathcal{K}}c^{\pm}_{k}(t_c)
+    %\left \langle  
+    %f(\xi_1, \nu(\xi_1); \delta)
+    %P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+    %\varphi_0^\epsilon[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi}), 
+    %P_l[\hat{\Pi}^{\pm}_{t_c}](\xi) 
+    %\varphi_0^\epsilon[\hat{\Pi}^\prime](\xi)  \right \rangle
+  \end{split}
+\end{equation}
+where 
+\[
+  f(\xi_1, \nu(\xi_1); \delta) 
+  =
+    \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+    \sin \left( \frac{\pi \gamma}{2}  \right) 
+    \text{sgn}(\xi_1)
+    \Theta(\xi_1^2 - 4\delta) \left(1 + \frac{\xi_1}{\nu(\xi_1)}\right)
+    \exp \left[- \frac{q_c}{\epsilon}|\xi_1 - \nu(\xi_1)| \right]
+\]
+and 
+\[
+  \tilde{\xi} = (\nu(\xi_1), \xi_2, ..., \xi_d) 
+\]
+It is actually convenient to define 
+\[
+  a_{kl} :=  
+    \left \langle  
+    f(\xi_1, \nu(\xi_1); \delta)
+    %P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+    \varphi_k^\epsilon[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi}), 
+    %P_l[\hat{\Pi}^{\pm}_{t_c}](\xi) 
+    \varphi_l^\epsilon[\hat{\Pi}^\prime](\xi)  \right \rangle
+\]
+so that 
+\[
+  a_l =  
+    \frac{1}{\|\hat{\psi}^\mp \|}
+    \sum_{k \in \mathcal{K}}c^{\pm}_{k}(t_c)
+    a_{kl}
+\]
+Following the same approach as for the update of the coefficients 
+stemming from the variational approximation, computation of 
+the coefficients requires solving integrals of the following form 
+\begin{align}
+  \begin{split}
+    kd
+  \end{split}
+\end{align}
+\newpage
+%Our objective (not only) is to study the behaviour of the Fourier coefficients 
+%as a function of $l \in \mathcal{L}$ for fixed $k \in \mathcal{K}$.
+%\\
+%\\
+Under the integral sign, the product of the two Gaussians is given by 
+\begin{equation}
+  \begin{split}
+    &= 
+    \exp{\left[ 
+        \frac{i}{2\epsilon}(\tilde{\xi}-p)^TQP^{-1}(\tilde{\xi}-p) +
+      \frac{i}{\epsilon}q^T(\tilde{\xi}-p)
+  -\frac{q_c}{\epsilon}|\xi_1 - \nu(\xi_1)| \right] }
+  \\
+    &\hspace{1cm}
+    \exp{ \left[
+      \overline{\frac{i}{2\epsilon}(\xi-p^\prime)^TQP^{-1}(\xi-p^\prime) +
+      \frac{i}{\epsilon}q^T(\xi-p^\prime)}
+    \right] } \text{ } d \xi
+  \end{split}
+\end{equation}
+We can simplify the argument in the exponential term further. Consider the 
+real and imaginary matrix decomposition $QP^{-1} = R + i I$ where $R$ and $I$
+are symmetric since $QP^{-1}$ is, and let
+\begin{equation}
+  \tilde{a} = [\nu(\xi_1) - p_1, 0, ..., 0] 
+  \hspace{.8cm}
+  a = [\xi_1 - p_1^\prime, 0, ..., 0] 
+  \hspace{.8cm}
+  b = [0, \xi_2 - p_2, ..., \xi_d - p_d] 
+\end{equation}. Then,
+\begin{equation}
+  \begin{split}
+   &     \frac{i}{2\epsilon}(\tilde{a} + b)^T(R + i I)(\tilde{a} + b) +
+   \frac{i}{\epsilon}q^T(\tilde{a} + b)
+  -\frac{q_c}{\epsilon}|\xi_1 - \nu(\xi_1)| +
+  \\
+  &
+  + \overline{\frac{i}{2\epsilon}(a + b)^T(R + iI)(a + b) +
+      \frac{i}{\epsilon}q^T(a + b)} = 
+  \\
+  &
+  -\frac{1}{2\epsilon}\left[ 
+    (\tilde{a} + b)^T I(\tilde{a} + b) 
+    + (a + b)^T I(a + b) 
+  + 2q_c |\xi_1 - \nu(\xi_1)| 
+  \right]
+  \\
+  &
+  +\frac{i}{2\epsilon}\left[ 
+    (\tilde{a} + b)^T R(\tilde{a} + b) 
+    - (a + b)^T R(a + b) + 2q^T(\tilde{a} - a) 
+  \right]
+  =
+  \\
+  &
+  -\frac{1}{2\epsilon}\left[ 
+    \tilde{a}^T I \tilde{a} + a^T Ia 
+    + 2b^T I b + (\tilde{a}^T + a^T)I b
+    + b^TI(\tilde{a} + a)
+  + 2q_c |\xi_1 - \nu(\xi_1)| 
+  \right]
+  \\
+  &
+  +\frac{i}{2\epsilon}\left[ 
+    \tilde{a}^T R \tilde{a} - a^T Ra 
+     + (\tilde{a}^T - a^T)R b
+    + b^TR(\tilde{a}  - a)
+    + 2q_1(\tilde{a}_1 - a_1)) 
+  \right]
+  =
+  \\
+  &
+  -\frac{1}{2\epsilon}\left[ 
+  \tilde{a}^T I \tilde{a} + a^T Ia 
+    + 2b^T I b + 2(\tilde{a}^T + a^T)I b
+  + 2q_c |\xi_1 - \nu(\xi_1)| 
+  \right]
+  \\
+  &
+  +\frac{i}{2\epsilon}\left[ 
+    \tilde{a}^T R \tilde{a} - a^T Ra 
+     + 2(\tilde{a}^T - a^T)R b
+    + 2q_1(\tilde{a}_1 - a_1) 
+  \right]
+  =
+  \\
+  &
+  -\frac{1}{2\epsilon}\left[ 
+    I_{11}(\tilde{a}_1^2 + a_1^2) 
+    + 2b^T I b + 2(\tilde{a}_1 + a_1)\sum_{j = 2}^d I_{1,j} b_j
+  + 2q_c |\xi_1 - \nu(\xi_1)| 
+  \right]
+  \\
+  &
+  +\frac{i}{2\epsilon}\left[ 
+    R_{11} (\tilde{a}_1^2 - a_1^2)  
+    + 2(\tilde{a}_1 - a_1)\sum_{j=2}^d R_{1,j} b_j
+    + 2q_1(\tilde{a}_1 - a_1) 
+  \right]
+  =
+  \\
+  &
+  -\frac{1}{2\epsilon}\left[ 
+    I_{11}(\tilde{a}_1^2 + a_1^2) 
+    + 2b^T I b + 2(\tilde{a}_1 + a_1)\sum_{j = 2}^d I_{1,j} b_j
+  + 2q_c |\xi_1 - \nu(\xi_1)| 
+  \right]
+  \\
+  &
+  +\frac{i}{2\epsilon}\left[ 
+    R_{11} (\tilde{a}_1^2 - a_1^2)  
+    + 2(\tilde{a}_1 - a_1)\left(q_1 + \sum_{j=2}^d R_{1,j} b_j\right) 
+  \right]
+  \end{split}
+\end{equation}
+We investigate different attempts to solving the integral for the Fourier coefficients. 
+For each approach there is a convenient way of re-writing the integral.
+\\
+\\
+The integral representation of $a_{kl}$ is given by  
+\begin{equation}
+  \begin{split}
+    a_{kl} &\propto 
+    \int_{\mathbb{R}^{d}} \text{sgn}(\xi_1)
+      \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+      P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+      \overline{ P_l[\hat{\Pi}^\prime](\xi)} 
+      \times 
+      \\
+      &
+      \exp{\left\{
+    -\frac{1}{2\epsilon}\left[ 
+      I_{11}(\tilde{a}_1^2 + a_1^2) 
+      + 2b^T I b + 2(\tilde{a}_1 + a_1)\sum_{j = 2}^d I_{1,j} b_j
+    + 2q_c |\xi_1 - \nu(\xi_1)| 
+    \right]
+      \right\} }
+    \\
+    &
+    \exp{\left\{
+    \frac{i}{2\epsilon}\left[ 
+      R_{11} (\tilde{a}_1^2 - a_1^2)  
+      + 2(\tilde{a}_1 - a_1)\left(q_1 + \sum_{j=2}^d R_{1,j} b_j\right) 
+    \right]
+      \right\} }  d\xi
+  \\
+    &=\int_{\mathbb{R}^{d-1}}  
+      \exp{\left\{
+    -\frac{1}{\epsilon}\left[ 
+       b^T I b 
+    \right]
+      \right\} }
+      \int_{\mathbb{R}} \text{sgn}(\xi_1)
+      \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+      P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+      \overline{ P_l[\hat{\Pi}^\prime](\xi)} 
+      \\
+      &
+      \times 
+      \exp{\left\{
+    -\frac{1}{2\epsilon}\left[ 
+      I_{11}(\tilde{a}_1^2 + a_1^2) 
+       + 2(\tilde{a}_1 + a_1)\sum_{j = 2}^d I_{1,j} b_j
+    + 2q_c |\xi_1 - \nu(\xi_1)| 
+    \right]
+      \right\} }
+    \\
+    &
+    \exp{\left\{
+    \frac{i}{2\epsilon}\left[ 
+      R_{11} (\tilde{a}_1^2 - a_1^2)  
+      + 2(\tilde{a}_1 - a_1)\left(q_1 + \sum_{j=2}^d R_{1,j} b_j\right) 
+    \right]
+\right\} }  d\xi_1d\xi_{d-1}
+  \end{split}
+\end{equation}
+The proportionality constant is $\exp{\left( -\frac{i}{\epsilon} S^{\pm}(t_c) \right)} \sin(\frac{\pi \gamma}{2})$
+\textcolor{red}{Have the resulting integral here}
+\\
+We also note that $I$ is real symmetric and so diagonalizable
+%%%%%%%%%%%%
+%
+%
+% TAYLOR EXPANSION + GAUSSIAN INTEGRALS
+%
+%
+%%%%%%%%%%%%
+%%%%%%%%
+%
+%
+%       PROJECTING TRANSMITTED WAVEPACKET ONTO A HAGEDORN BASIS SET
+%                 TRANSFORMATION TO A TENSOR PRODUCT FORM
+%
+%
+%%%%%%%%
+\subsection{d-dimensional case}
+Solution of the inner most nasty integral in $\xi_1$ may then allow 
+us to solve the remaining $d-1$ dimensional integral explicitly
+\subsubsection{Monte Carlo Integration}
+(Ignore global phase factor for the moment)
+\\
+We find it convenient to re-write $a_{kl}$ in terms of complex 
+coefficients as follows (we will use this form in other parts 
+of the projection section)
+\begin{equation}
+  \begin{split}
+    a_{kl} &= \sin\left(\frac{\pi \gamma}{2}\right) 
+    \int_{\mathbb{R}^{d-1}} \exp{\left[ -\frac{1}{\epsilon}b^TIb  \right]}
+    \int_{\mathbb{R}} \text{sgn}(\xi_1) \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+      P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+      \overline{ P_l[\hat{\Pi}^\prime](\xi)} 
+    \times 
+    \\
+    &
+    \hspace{1cm}
+    \exp{\left[-\frac{1}{2\epsilon} 
+        \left( \alpha \tilde{a}_1^2 + \overline{\alpha} a_1^2
+        + \beta \tilde{a}_1 + \overline{\beta} a_1 + 2q_c|\xi_1 - \nu(\xi_1)|
+      \right) 
+    \right]}  d \xi_1 d\xi_{d-1}
+    \\
+    &= \int_{\mathbb{R}^{d-1}} \exp{\left[ -\frac{1}{\epsilon}b^TIb  \right]}
+    \int_{\mathbb{R}} \text{sgn}(\xi_1) \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+      P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+      \overline{ P_l[\hat{\Pi}^\prime](\xi)} 
+    \times 
+    \\
+    &
+    \hspace{1cm}
+    \exp \Bigg[-\frac{1}{2\epsilon} 
+        \Big( \alpha (\nu(\xi_1) - p_1)^2 + \overline{\alpha} (\xi_1 - p_1^\prime)^2
+          + \beta (\nu(\xi_1) - p_1) + \overline{\beta} (\xi_1 - p_1^\prime)
+    \\
+    &
+    \hspace{1cm}
+    + 2q_c|\xi_1 - \nu(\xi_1)|
+      \Big) 
+    \Bigg]  d \xi_1 d\xi_{d-1}
+    \\
+  \end{split}
+\end{equation}
+We spot a Gaussian term in the integral which would be suitable for 
+numerical integration via MC.
+\begin{equation}
+  \begin{split}
+    a_{kl}&= \int_{\mathbb{R}^{d-1}} \exp{\left[ -\frac{1}{\epsilon}b^TIb  \right]}
+    \int_{\mathbb{R}} \text{sgn}(\xi_1) \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+      P_k[\hat{\Pi}^{\pm}_{t_c}](\tilde{\xi})
+      \overline{ P_l[\hat{\Pi}^\prime](\xi)} 
+    \times 
+    \\
+    &
+    \hspace{1cm}
+    \exp \Bigg[-\frac{1}{2\epsilon} 
+        \Big( \alpha (\nu(\xi_1) - p_1)^2 
+          + \beta (\nu(\xi_1) - p_1) + \overline{\beta} (\xi_1 - p_1^\prime)
+       + 
+       iR_{11}
+    (\xi_1 - p_1^\prime)^2  
+        + 2q_c|\xi_1 - \nu(\xi_1)|
+    \Big) \Bigg]
+    \\
+    &
+    \hspace{1cm}
+    \textcolor{blue}{
+    \exp \Bigg[
+      -\frac{I_{11}}{2\epsilon}
+    (\xi_1 - p_1^\prime)^2  
+\Bigg] } d \xi_1 d\xi_{d-1}
+  \end{split}
+\end{equation}
+where 
+\begin{equation}
+  \begin{split}
+  \alpha = I_{11} - i R_{11} &\hspace{1cm}  
+    \beta = -i2q_1 + 2\sum_{j=2}^d (I_{1,j}  - i R_{1,j})b_j 
+  \end{split}
+\end{equation}
+We can use a Monte Carlo estimator 
+so that 
+\begin{equation}
+  \begin{split}
+    a_{kl} =& \lim_{N\to\infty}
+    \sum_{n=0}^N
+    \text{sgn}(\xi_n) \Theta(\xi_n^2 - 4\delta)
+    \left( 1 + \frac{\xi_n}{\nu(\xi_n)} \right)
+    \\
+            &
+    \exp \Bigg[-\frac{1}{2\epsilon} 
+        \Big( \alpha (\nu(\xi_n) - p_1)^2 
+       + 
+       iR_{11}
+    (\xi_n - p_1^\prime)^2  
+        + 2q_c|\xi_n - \nu(\xi_n)|
+    \Big) \Bigg]
+    \times
+    \\
+    &\int_{\mathbb{R}^{d-1}} 
+    P_k[\hat{\Pi}^{\pm}_{t_c}](\nu(\xi_n), \xi_2, ..., \xi_d)
+      \overline{ P_l[\hat{\Pi}^\prime](\xi_n, \xi_2, ..., \xi_d)} 
+      \\
+    &
+    \exp{\left[ -\frac{1}{\epsilon}(b^TIb  )  \right]}
+  \end{split}
+\end{equation}
+To do:
+\begin{itemize}
+  \item integral is incomplete but we get the idea
+  \item will loose efficiency of samples 
+    when checking $\Theta(....)$
+  \item there is some normalisation constant 
+    missing
+  \item inner integral should be solvable since $I$ is 
+    diagonalizable
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%
+%
+% 
+%     D DIMENSIONAL INTEGRAL APPROXIMATION VIA FIRST ORDER 
+%                     TAYLOR EXPANSION
+%
+%
+%%%%%%%%%%%%%%%
+\subsubsection{Taylor expansion + Gaussian Integrals}
+We will consider this approach once we have an expression for the $k^\text{th}$ 
+order polynomials. For the moment jump to the section on one dimensional 
+integration which consists in the same approach and not much will change 
+for this situation since we will be able to solve the remaining $d-1$ 
+integrals exactly.
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%     PRINCIPLE OF STATIONARY PHASE - ONE DIMENSION 
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{One dimension - principle of stationary phase}
+\\
+Could think of solvin inner integral using an asymptotic expansion 
+and then see whether the resulting $d-1$ integral could be solved exactly...?
+\\
+In this case we want to re-write the integral in a form such that the imaginary term in 
+the exponent is explicit. For $d=1$, the polynomials reduce to Hermite polynomials.
+The integral is of the form  
+\begin{equation}
+  \begin{split}
+    \int_{\mathbb{R}} f(\xi; \delta) \exp{\left[ \frac{i}{2\epsilon} g(\xi; \delta)  \right]} d \xi
+  \end{split}
+\end{equation}
+where 
+\begin{equation}
+  \begin{split}
+      f(\xi; \delta) &= \text{sgn}(\xi_1) \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+      p_k[\Pi](\nu(\xi)) p_l[\Pi^\prime](\xi)
+      \\
+      &
+      \exp{\left[ - \frac{1}{2\epsilon} (2 I_{11} \xi_1^2 
+          + 2\xi_1(-I_{11}p_1^\prime + \sum_{j=2}^d I_{1,j}b_j) 
+          + 2\nu(\xi_1)(-p_1I_{11} + \sum_{j=2}^dI_{1,j}b_j)
+      )  \right]}
+          \\
+      &
+         \exp{\left[
+             I_{11}(-4\delta + p_1^2 + p_1^\prime^2) 
+             - 2 (p_1 + p_1^\prime)(\sum_{j=2}^dI_{1,j}b_j)
+             + q_c|\xi_1 - \nu(\xi_1)|
+      \right]}
+      \\
+      g(\xi; \delta) &= 2\nu(\xi_1)( \sum_{j=2}^dR_{1,j}b_j + q_1 - R_{11}p_1  ) 
+      - 2\xi_1(\sum_{j=2}^d R_{1,j}b_j + q_1  - R_{11}p_1^\prime )
+       \\
+      & R_{11}(- 4\delta + p_1^2 - p_1^\prime^2)
+      + 2\left( q_1 + \sum_{j = 2}^d R_{1,j}b_j \right) (- p_1 + p_1^\prime ) 
+  \end{split}
+\end{equation}
+\textcolor{red}{If you approximate $\nu(\xi_1)$ then you would be able 
+to say something about the frequency of the oscillations}
+\\
+For $d = 1$, the polynomials reduce to the Hermite polynomials 
+We can re-write the oscillator more succintly as 
+\[ 
+  g(\xi_1; \delta) = \alpha \nu(\xi_1) + \beta \xi_1 + \gamma 
+\]
+where 
+\begin{equation}
+  \begin{split}
+    \alpha &= 2( q_1 + \sum_{j=2}^d R_{1,j}b_j - Rp_1 )  
+  \\
+  \beta &= 2(- q_1 - \sum_{j=2}^d R_{1,j}b_j + Rp_1^\prime)
+  \\
+  \gamma &=  
+\end{split}
+\end{equation}
+and $g(\xi)$ has a stationary point on $(2\sqrt{\delta}, \infty)$ at $\xi_1^*$
+that solves
+\begin{equation}
+  \begin{split}
+    &\frac{\alpha \xi_1}{\sqrt{\xi_1^2 - 4\delta}}
+    + \beta = 0 
+    \\
+    &
+    \Leftrightarrow
+    \xi_1^* = \sqrt{\frac{-4\beta^2 \delta}{\alpha^2 - \beta^2}}
+  \end{split}
+\end{equation}
+where $\alpha^2 - \beta^2 \leq 0$ with equality when ....
+\\
+The stationary point is non-degenerate so should be able to 
+re-write in quadratic form via a change of variables
+\\
+The frequency depends on the ration $\delta/\epsilon$
+%Unlike a numerical scheme we can not arbitrarily improve the accuracy of 
+%an asymptotic expansion 
+Change of variables...?
+$f(\xi)$ is not smoothed but can be smoothed...?
+%\textcolor{red}{you might also want to consider the higher order corrections 
+%and see if you can approximate the moments too with the same principle...?}
+\begin{equation}
+  \begin{split}
+    &\int_{\mathbb{R}} \text{sgn}(\xi_1) 
+    \Theta(\xi_1^2 - 4\delta)\left( 1 + \frac{\xi_1}{\nu(\xi_1)} \right)
+    g(\xi_1, \nu(\xi_1))
+    \times 
+    \\
+    &
+    \hspace{1cm}
+    \exp{\left[-\frac{1}{2\epsilon} 
+        \left( \alpha \tilde{a}_1^2 + \overline{\alpha} a_1^2
+        + \beta \tilde{a}_1 + \overline{\beta} a_1 + 2q_c|\xi_1 - \nu(\xi_1)|
+      \right) 
+    \right]}  d \xi_1
+  \end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%     ONE DIMENSION - MONTE CARLO INTEGRATION  
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%
+%
+%
+%       ONE DIMENSIONAL CASE
+%
+%
+%%%%%%%%
+%As discussed in Chapter ..., the solution to the molecular
+%schrodinger equation can be expressed in the basis of Hagedorn wavepackets as
+%\begin{align}
+%  \psi(x,t) = e^{-iS(t)/\epsilon} \sum_{k \in \mathbb{N}^d} c_k(t) \varphi_k^\epsilon[\Pi(t)](x)
+%  \label{hagedorn:hagedorn_wavepackets:linear_combination:space}
+%\end{align}
+%where the equality holds in the $L^2$ norm (?)
+%The property of Hagedorn wavepackets with respect to the Fourier Transform
+%\textcolor{red}{to verify one can interchange integration and summation
+%when going from a position to a momentum representation when expressed as
+%an infinite sum... dominated convergence theorem...?}
+%yields a representation in a different (w.r.t. the parameter set) basis set in momentum space
+%which is given by
+%\begin{align}
+%  \hat{\psi}(\xi,t) = e^{-iS(t)/\epsilon}e^{-ip \cdot q / \epsilon} \sum_{k \in \mathbb{N}^d}
+%  (-i)^{|k|} c_k(t) \varphi_k^\epsilon[\hat{\Pi}(t)](\xi)
+%  \label{hagedorn:hagedorn_wavepackets:linear_combination:momentum}
+%\end{align}
+%where $\hat{\Pi}(t) = (p(t), -q(t), P(t), -Q(t))$ and $|k| = \sum k_j$ (check this)
+%\\
+%The following holds true for these Hagedorn wavepackets
+%\begin{align}
+%  \mathcal{F}^{\epsilon} \varphi_k^\epsilon[\Pi](\xi)
+%  = (-i)^{|k|}e^{-ip \cdot q / \epsilon} \varphi_k^{\epsilon}[\hat{\Pi}](\xi)
+%\end{align}
+%The Hagedorn wavepackets satisfy the following recurrence relation in position space
+%while in momentum space \textcolor{red}{The
+%following should hold true since they still form a basis in momentum space...?}
+%\begin{align}
+%  Q \left(\sqrt{k_j + 1 } \mathcal{F}^{\epsilon}\varphi^\epsilon_{k + \langle j \rangle} \right)_{j=1}^d
+%  =
+%  \sqrt{\frac{2}{\epsilon}} (x - q) \mathcal{F}^{\epsilon}\varphi_k^\epsilon(x) -
+%  \bar{Q}\left(\sqrt{k_j} \mathcal{F}^{\epsilon}\varphi_{k - \langle j \rangle } \right)_{j=1}^d
+%\end{align}
+%with $\varphi_0^\epsilon$ given in equation
+%\eqref{hagedorn:hagedorn_wavepackets:complex_gaussian} and $\langle j  \rangle$ denoting the
+%canonical $d$-dimensional unit vector. The $\varphi_k$ is a polynomial of degree $\sum k_j$
+%multiplied with a $d$-dimensional gaussian and we can re-write $\varphi_k^{\epsilon}$
+%in the following form for convenience
+%\begin{align}
+%  \varphi^{\epsilon}_k(x) = p_k(x) \varphi_0^{\epsilon}
+%\end{align}
+%and similarly in momentum space
+%\\
+%\\
+\end{document}

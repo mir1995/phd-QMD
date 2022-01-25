@@ -1,0 +1,100 @@
+\document[./main_hagedorn.tex]{subfiles}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\usepackage{amsmath}
+
+\begin{document}
+%%%%%%%%
+%
+%
+%       PROJECTING TRANSMITTED WAVEPACKET ONTO A HAGEDORN BASIS SET
+%                 COMPUTE NEW PARAMETER SET p,Q,P 
+%
+%
+%%%%%%%%
+\subsection{Transmitted wavepacket}
+We can now apply the transmission formula of equation ... for the two cases 
+of constant and non-constant eigenvalues
+%%%%%%%%%%%%%%%%
+%
+%
+%   CONSTANT EIGENVALUES
+%
+%
+%
+%%%%%%%%%%%%%%%%
+\subsubsection{Constant eigenvalues}
+The transmitted wavepacket 
+is given by \cite{betzSuperadiabaticTransitionsQuantum2009}
+\begin{equation}
+  \begin{split}
+    \hat{\psi}^{\mp}(\xi,t_c) 
+    &= 
+    \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+    \sin \left( \frac{\pi \gamma}{2}  \right) \times
+    \\
+    &
+    \text{sgn}(\xi_1)
+    \Theta(\xi_1^2 - 4\delta) \left(1 + \frac{\xi_1}{\nu(\xi_1)}\right)
+    \exp{\left(-\frac{q_c}{\epsilon}|\xi_1 - \nu(\xi_1)|} \right)
+    \times
+    \\
+    &
+    \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) 
+    \varphi_k^\epsilon[\hat{\Pi}^{\pm}(t_c)](\nu(\xi_1), \xi_2, ..., \xi_d)
+    \\
+    &= 
+    \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+    \sin \left( \frac{\pi \gamma}{2}  \right) \times
+    \\
+    &
+    \text{sgn}(\xi_1)
+    \Theta(\xi_1^2 - 4\delta) \left(1 + \frac{\xi_1}{\nu(\xi_1)}\right)
+    \exp{\left(-\frac{q_c}{\epsilon}|\xi_1 - \nu(\xi_1)|} \right)
+    \times
+    \\
+    &
+    \varphi_0^\epsilon[\hat{\Pi}^{\pm}(t_c)](\nu(\xi_1), \xi_2, ..., \xi_d)
+    \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c)p_k(\nu(\xi_1), \xi_2, ..., \xi_d)
+  \end{split}
+\end{equation}
+\begin{itemize}
+  \item At least for Gaussian wavepackets with "large enough" momentum, the effect of the 
+    cut-off function should be "negligible" as a result of the exponential decay. 
+    Is this still the case as the order of the Hagedorn wavepacket increases...? The 
+    variance of $\varphi^{\epsilon}_k$ scales with $k$...
+\end{itemize}
+%%%%%%%%
+%
+%   General formula - what has happened to sin(\pi \gamma / 2)
+%
+%%%%%%%%
+\subsubsection{Non-constant + tilted crossings}
+The transmitted wavepacket 
+is given by \cite{betzNonadiabaticTransitionsMultiple2019} 
+\begin{equation}
+  \begin{split}
+    \hat{\psi}^{\mp}(\xi,t_c) 
+    &= 
+    \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+    \times
+    \\
+    &
+    \Theta(\xi_1^2 - 4\delta) \frac{\nu(\xi_1) + \xi_1}{2|\nu(\xi_1)|}
+    \exp{\left(-\frac{\tau_c}{2\delta\epsilon}|\xi_1 - \nu(\xi_1)|} \right)
+    \exp{\left(-\frac{i\tau_r}{2\delta\epsilon}(\xi_1 - \nu(\xi_1))} \right)
+    \times
+    \\
+    &
+    \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) 
+    \varphi_k^\epsilon[\hat{\Pi}^{\pm}(t_c)](\nu(\xi_1), \xi_2, ..., \xi_d)
+  \end{split}
+\end{equation}
+\textcolor{red}{Is there an actual mismatch between the formulas for the constant eigenvalue 
+and the general case? That is, why does the $\sin$ prefactor disappear for 
+the general case? Also, I would think the formula is invariant to the direction 
+of the jump between levels..? The derivation was done from up to down but intuitively 
+thing should not change...?} 
+
+\end{document}

@@ -1,0 +1,84 @@
+\document[./main_hagedorn.tex]{subfiles}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\begin{document}
+  \section{Non-adiabatic transitions: avoided crossings}
+  \textcolor{blue}{
+\textbf{Need to discuss \cite{gradinaruTunnelingDynamicsSpawning2010}}
+ which is about applying a similar method but in the context of tunneling}
+ \\
+Still need to look at the work of Hagedorn for 
+gap size shrinking with $\sqrt{\epsilon}$ but also the 
+the work by Olivier using normal local forms in the context 
+of avoided crossings.
+Hagedorn wavepacket dynamics in the context of avoided 
+crossings were also investigated by Bourquin et al. in
+\cite{bourquinNonadiabaticTransitionsAvoided2012} 
+The authors extend the one level algorithm 
+outlined in \cite{lubichQuantumClassicalMolecular2008} to the 
+multilevel case: the potential matrix $V(\bm{x})$ is splitted
+into a diagonal quadratic term and the non-quadratic remainder,
+with the non-adiabatic coupling terms occupying the off-diagonal entries.
+The same dirac-Frenkel variational principle reported in Section ...
+can be applied to yield a similar set of equations for the update of the 
+coefficients as in equation (...) but now it also envolves the coupling terms.
+Details of the numerics regarding the computation of these integrals can be 
+found in \cite{bourquinNumericalAlgorithmsSemiclassical2017}.
+Here we consider incorporating the formulae for the transmitted wavepackets
+outlined in section ... in this methodology. Hence, we need to integrate only 
+the one level dynamics. A similar approach was also considered in 
+\cite{bourquinNonadiabaticTransitionsAvoided2012} by implementing the 
+one dimensional transition formula derived in
+\cite{hagedornDeterminationNonadiabaticScattering2005} through JWKB analysis 
+but with no concrete implementation given the impractility of 
+the formula 
+(analytic continuation - \textcolor{red}{needs to be explained better}).
+\textcolor{red}{eventually will need a comparison of the numerical results
+beside a description of advantages/disadvantages}
+Since the transmitted wavepacket is expressed in momentum space, we might 
+as well work in momentum space, and so take $x \mapsto \xi$, so that we do not worry about 
+pre-factors resulting from the Fourier Transform of Hagedorn wavepackets.
+We will now denote the parameter set as $\hat{\Pi} := \{p, q, P, Q\}$
+as a reminder that we are working in momentum space.
+\\
+\\
+Consider the following initial condition corresponding to one of the adiabatic
+subspaces
+\begin{align}
+  \hat{\psi}^{\pm}(\xi,0) := 
+  \sum_{k \in \mathcal{K}} c_k^{\pm}(0) \varphi_k^\epsilon[\hat{\Pi}^{\pm}(0)](\xi)
+\end{align}
+where $c_k^{\pm} \in \mathbb{C}$ \xi \in \mathbb{R}^d$
+and the index set $\mathcal{K} \subset \mathbb{N}^d$.
+\\
+\textcolor{red}{How do we detect the avoided crossing?} 
+\\
+Let $t_c$ denote the time at which the avoided crossing is detected. 
+The wavepacket at time $t_c$
+is given by 
+\begin{align}
+  \hat{\psi}^{\pm}(\xi,t_c) = 
+  \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+  \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) \varphi_k^\epsilon[\hat{\Pi}^{\pm}(t_c)](\xi)
+\end{align}
+\\
+The projection onto a Hagedorn basis set at the avoided crossing for the 
+transmitted wavepacket requires the following steps:
+\begin{enumerate}
+  \item \textbf{Change of basis/co-ordinates} for the Hagedorn wavepackets such that
+    a coordinate axis is parallel to $p(t_c)$, the momentum of the wavepacket 
+    at the time of the avoided crossing (and keep same orientation)
+  %\item \textbf{Transform a wavepacket into a tensor product form} (see Hagedorn
+  %  and Lasser paper) - assuming we can get a representation for the 
+  %  $d>1$ polynomials then we will not need this if attempting an 
+  %  analytical approximation to the method
+  \item \textbf{Compute the new parameter set} for $p,P,Q$ 
+  $p$ should be enough
+    \textcolor{red}{How to detect an avoided crossing in high dimension?}
+  \item \textbf{Project the transmitted wavepackets onto the new basis set.}
+\end{enumerate}
+\end{document}
+

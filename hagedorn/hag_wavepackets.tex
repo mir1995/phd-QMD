@@ -1,0 +1,103 @@
+\document[./main_hagedorn.tex]{subfiles}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\let\proof\relax\let\endproof\relax % use proof from amsthm
+\usepackage{amsthm,xpatch}
+\xpatchcmd{\proof}{\itshape}{\bfseries}{}{}
+\renewcommand\qedsymbol{$\blacksquare$}
+\usepackage{comment}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{Hagedorn.bib}
+
+\begin{document}
+
+\subsection{Hagedorn's parametrization}
+\textcolor{blue}{To do list:
+\begin{itemize}
+  \item Why is it exact for a quadratic potential (metaplectic transformation?) - (similar to egorov theorem)  
+  \item what does $e^{-iH/t}$ do qualitatively? (exponentiation of 1st order derivative is translation)
+  \item How does the variance of the wavepacket evolve in time? Can you draw 
+    any qualitative conclusions about when the support spreads out fast vs slow?
+%  \item It would be interesting to understand more about this symplecticity 
+%    notion
+%  \item Make sure you understand the evolution of the parameters qualitatively
+%  \item Exercise: proofs - what is the error, it should go down to zero if I consider 
+%    an infinite number of wavepackets...? it should converge
+%  \item the error in the numerical scheme... 
+%  \item this classical action phase... why is it there...?
+%  \item Construction of these Hagedorn wavepackets from raising and lowering operators?
+%    what is the motivation for introducing raising and lowering operators...?
+%  \item Quantitative/qualitative description of Hagedorn wavepackets - variance increases 
+%    with $k$... what else...
+%  \item Symplectic relation
+\end{itemize}
+}
+Consider a complex semi-classical Gaussian wavepacket in the following form
+  \begin{align}
+    \varphi^\epsilon_0(\bm{x}):=
+    (\pi\epsilon)^{-\frac{d}{4}} (\det
+    \bm{Q})^{-\frac{1}{2}}
+    \exp{\left( \frac{i}{2\epsilon}(\bm{x}-\bm{q})^T\bm{PQ}^{-1}(\bm{x}-\bm{q}) +
+    \frac{i}{\epsilon}\bm{p}^T(\bm{x}-\bm{q})\right)}
+    \label{hagedorn:hagedorn_wavepackets:complex_gaussian}
+  \end{align}
+  Here on we will follow the notational convention
+as in \cite{bourquinNumericalAlgorithmsSemiclassical2017} to denote the set 
+of parameters as $\Pi := \left(\bm{q}, \bm{p}, \bm{Q}, \bm{P}\right)$. 
+The matrix $\mathbb{C}^{d \times d} \ni \bm{C} := \bm{PQ}^{-1}$ is complex symmetric 
+with positive definite imaginary part. The matrices $\bm{P}$ and $\bm{Q}$ must 
+satisfy further properties as enunciated in the following Lemma. 
+\begin{lemma}[\cite{hagedornRaisingLoweringOperators1998}]
+  \label{hagedorn:hagedorn_orthogonal_projection:lemma:symplectic_equations} 
+  Two square matrices $\bm{Q}, \bm{P} \in \mathbb{C}^{d \times d}$ satisfy the following relations 
+  \begin{equation} 
+    \begin{split}
+      \bm{Q}^T\bm{P} - \bm{P}^T\bm{Q}   & = 0 \\
+      \bm{Q}^*\bm{P} - \bm{P}^*\bm{Q} & = 2i\bm{I}_{d}
+    \end{split}
+    \label{hagedorn:hagedorn_wavepackets:lemma:symplectic:equations}
+  \end{equation}
+  if and only if $\bm{Q}$ and $\bm{P}$ are invertible and $\bm{C}=\bm{PQ}^{-1}$ is complex symmetric with positive 
+  definite imaginary part. Moreover, $\Im(\bm{C}) = (\bm{QQ}^*)^{-1}$.
+\end{lemma}
+\begin{proof}
+  $\left( \Rightarrow  \right)$ Suppose b.w.o.c. that $Q$ is 
+  not invertible. Then $\det(\bm{Q}) = 0 = \det(\bm{Q}^*)$
+  which leads to 
+  a contradiction when taking the determinant of both sides of the 
+  second equation in \eqref{hagedorn:hagedorn_wavepackets:lemma:symplectic:equations}.
+  Similarly for $\bm{P}$.
+  \\
+  Multiplying the first equation in 
+  \eqref{hagedorn:hagedorn_wavepackets:lemma:symplectic:equations}
+  by $\bm{Q}^{-1}$ on the right we get $\bm{Q}^T\bm{PQ}^{-1} = \bm{P}^T \Rightarrow 
+  \bm{PQ}^{-1} = (\bm{Q}^T)^{-1}\bm{P}^T = (\bm{PQ}^{-1})^T$ and therefore $\bm{C}$ is complex 
+  symmetric.
+\end{proof}
+Show positive definiteness: $\bm{x}^T \Im(\bm{C}) \bm{x} = \langle \bm{x}, \Im(\bm{C})\bm{x}  \rangle > 0
+\text{ } \forall \text{ } \bm{x} \in \mathbb{R}^n$
+\\
+$\left( \Leftarrow \right)$
+\\\\
+Lemma ... gives a sufficient and necessary condition for two matrices
+$\bm{Q},\bm{P}$ to yield such a matrix $\bm{C}$ (?) and also a method(?) to construct 
+two desired such matrices.
+\textcolor{red}{Given a complex symmetric matrix, how to decompose into such 
+P, Q. Is there a trivial decomposition involving say the identity matrix. However, 
+is there a decomposition which requires a least number of wavepackets such that 
+the error in the norm (or another statistic/observable) is less than some tolerance value?}
+\\
+\\
+The fact that $\Im(\bm{C}) = (\bm{QQ}^{*})^{-1}$ justifies why the normalisation factor 
+of the complex Gaussian depends on $\bm{Q}$ alone.
+The reason why Hagedorn's parametrisation is useful will become clearer when 
+we will look at the dynamics. It is then useful to compare it to what one obtains when 
+this parametrisation is not made. 
+\end{document}

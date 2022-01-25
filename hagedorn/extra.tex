@@ -1,0 +1,283 @@
+\newpage
+\textbf{Example. Two dimension}
+\\
+\textcolor{red}{Should definitely derive recursive relation to make sure it makes
+sense. The following is unnecessary but should clear up any doubt. It could also be
+written more coincisely but ... could let (x-q) but does not bother me too much}
+\\
+With $k \in \mathbb{N}^2$ we write out the recurrence relation explicitly
+\begin{align}
+  \begin{bmatrix}
+    Q_{11} & Q_{12}
+    \\
+    Q_{21} & Q_{22}
+  \end{bmatrix}
+  \begin{bmatrix}
+  \sqrt{k_{1} + 1}
+  \varphi_{k + \langle 10 \rangle}
+    \\
+  \sqrt{k_{2} + 1}
+  \varphi_{k + \langle 01 \rangle}
+  \end{bmatrix}
+  =&
+  \sqrt{\frac{2}{\epsilon}}
+  \begin{bmatrix}
+    (x_1 - q_1)\varphi_k
+    \\
+    (x_2 - q_2)\varphi_k
+  \end{bmatrix}
+  -
+  \begin{bmatrix}
+    \overline{Q}_{11} & \overline{Q}_{12}
+    \\
+    \overline{Q}_{21} & \overline{Q}_{22}
+  \end{bmatrix}
+  \begin{bmatrix}
+    \sqrt{k_1}\varphi_{k - \langle 10 \rangle}
+    \\
+    \sqrt{k_2}\varphi_{k - \langle 01 \rangle}
+  \end{bmatrix}
+\end{align}
+and then try to obtain the integral representation that we
+are after noting that only
+$\varphi$ depends on $x$.
+\begin{align}
+  \begin{split}
+  &\begin{bmatrix}
+  Q_{11} \sqrt{k_{1} + 1} \varphi_{k + \langle 10 \rangle}
+   +
+   Q_{12} \sqrt{k_{2} + 1} \varphi_{k + \langle 01 \rangle}
+    \\
+  Q_{21} \sqrt{k_{1} + 1} \varphi_{k + \langle 10 \rangle}
+   +
+   Q_{22} \sqrt{k_{2} + 1} \varphi_{k + \langle 01 \rangle}
+  \end{bmatrix}
+  =
+  \\
+  &
+  =\begin{bmatrix}
+    \sqrt{\frac{2}{\epsilon}}(x_1 - q_1)\varphi_k
+    -
+    \overline{Q}_{11} \sqrt{k_{1}} \varphi_{k - \langle 10 \rangle}
+     -
+     \overline{Q}_{12} \sqrt{k_{2}} \varphi_{k - \langle 01 \rangle}
+    \\
+    \sqrt{\frac{2}{\epsilon}}(x_2 - q_2)\varphi_k
+    -
+    \overline{Q}_{21} \sqrt{k_{1}} \varphi_{k - \langle 10 \rangle}
+     -
+     \overline{Q}_{22} \sqrt{k_{2}} \varphi_{k - \langle 01 \rangle}
+  \end{bmatrix}
+  \end{split}
+\end{align}
+I can now multiply by $\textcolor{blue}{W\overline{\varphi_l}}$ on each side where $l \in \mathbb{N}^2$
+to yield
+\begin{align}
+  \begin{split}
+  &\begin{bmatrix}
+  Q_{11} \sqrt{k_{1} + 1} \varphi_{k + \langle 10 \rangle}
+   \textcolor{blue}{W\overline{\varphi_l}}
+   +
+   Q_{12} \sqrt{k_{2} + 1} \varphi_{k + \langle 01 \rangle}
+   \textcolor{blue}{W\overline{\varphi_l}}
+   \\
+  Q_{21} \sqrt{k_{1} + 1} \varphi_{k + \langle 10 \rangle}
+  \textcolor{blue}{W\overline{\varphi_l}}
+  +
+   Q_{22} \sqrt{k_{2} + 1} \varphi_{k + \langle 01 \rangle}
+ \textcolor{blue}{W\overline{\varphi_l}}
+ \end{bmatrix}
+  =
+  \\
+  &
+  =\begin{bmatrix}
+    \sqrt{\frac{2}{\epsilon}}(x_1 - q_1)\varphi_k
+    \textcolor{blue}{W\overline{\varphi_l}}
+    -
+    \overline{Q}_{11} \sqrt{k_{1}} \varphi_{k - \langle 10 \rangle}
+    \textcolor{blue}{W\overline{\varphi_l}}
+   -
+     \overline{Q}_{12} \sqrt{k_{2}} \varphi_{k - \langle 01 \rangle}
+    \textcolor{blue}{W\overline{\varphi_l}}
+  \\
+    \sqrt{\frac{2}{\epsilon}}(x_2 - q_2)\varphi_k
+    \textcolor{blue}{W\overline{\varphi_l}}
+    -
+    \overline{Q}_{21} \sqrt{k_{1}} \varphi_{k - \langle 10 \rangle}
+   \textcolor{blue}{W\overline{\varphi_l}}
+   -
+     \overline{Q}_{22} \sqrt{k_{2}} \varphi_{k - \langle 01 \rangle}
+  \textcolor{blue}{W\overline{\varphi_l}}
+  \end{bmatrix}
+  \end{split}
+\end{align}
+Integrating on both sides gives
+\begin{align}
+  \begin{split}
+  &\begin{bmatrix}
+    Q_{11} \sqrt{k_{1} + 1} \langle \varphi_{k + \langle 10 \rangle},
+    \textcolor{blue}{W\varphi_l} \rangle
+   +
+   Q_{12} \sqrt{k_{2} + 1} \langle \varphi_{k + \langle 01 \rangle},
+   \textcolor{blue}{W\varphi_l} \rangle
+   \\
+  Q_{21} \sqrt{k_{1} + 1} \langle \varphi_{k + \langle 10 \rangle},
+  \textcolor{blue}{W\varphi_l} \rangle
+  +
+   Q_{22} \sqrt{k_{2} + 1} \langle \varphi_{k + \langle 01 \rangle},
+ \textcolor{blue}{W\varphi_l} \rangle
+ \end{bmatrix}
+  =
+  \\
+  &
+  =\begin{bmatrix}
+    \sqrt{\frac{2}{\epsilon}}\langle(x_1 - q_1)\varphi_k,
+    \textcolor{blue}{W\varphi_l}\rangle
+    -
+    \overline{Q}_{11} \sqrt{k_{1}}\langle \varphi_{k - \langle 10 \rangle},
+    \textcolor{blue}{W\varphi_l}\rangle
+   -
+     \overline{Q}_{12} \sqrt{k_{2}}\langle \varphi_{k - \langle 01 \rangle},
+    \textcolor{blue}{W\varphi_l}\rangle
+  \\
+    \sqrt{\frac{2}{\epsilon}}\langle(x_2 - q_2)\varphi_k,
+    \textcolor{blue}{W\varphi_l}\rangle
+    -
+    \overline{Q}_{21} \sqrt{k_{1}} \langle\varphi_{k - \langle 10 \rangle},
+   \textcolor{blue}{W\varphi_l}\rangle
+   -
+     \overline{Q}_{22} \sqrt{k_{2}} \langle \varphi_{k - \langle 01 \rangle},
+  \textcolor{blue}{W\varphi_l}\rangle
+  \end{bmatrix}
+  \end{split}
+\end{align}
+which gives the following recurrence relation as expected
+\begin{align}
+  \begin{split}
+    \begin{bmatrix}
+    Q_{11} & Q_{12}
+    \\
+    Q_{21} & Q_{22}
+  \end{bmatrix}
+  &\begin{bmatrix}
+  \sqrt{k_{1} + 1}
+  \langle \varphi_{k + \langle 10 \rangle},
+    \textcolor{blue}{W\varphi_l}\rangle
+    \\
+  \sqrt{k_{2} + 1}
+  \langle \varphi_{k + \langle 01 \rangle},
+    \textcolor{blue}{W\varphi_l} \rangle
+  \end{bmatrix}
+  =
+  \sqrt{\frac{2}{\epsilon}}
+  \begin{bmatrix}
+    \langle (x_1 - q_1)\varphi_k, \textcolor{blue}{W \varphi_l} \rangle
+    \\
+    \langle (x_2 - q_2)\varphi_k, \textcolor{blue}{W \varphi_l} \rangle
+  \end{bmatrix}
+  +
+  \\
+   &-
+  \begin{bmatrix}
+    \overline{Q}_{11} & \overline{Q}_{12}
+    \\
+    \overline{Q}_{21} & \overline{Q}_{22}
+  \end{bmatrix}
+  \begin{bmatrix}
+    \sqrt{k_1}
+    \langle\varphi_{k - \langle 10 \rangle},
+    \textcolor{blue}{W\varphi_l}\rangle
+    \\
+    \sqrt{k_2}
+ \langle\varphi_{k - \langle 01 \rangle},
+   \textcolor{blue}{W\varphi_l}\rangle  \end{bmatrix}
+  \end{split}
+\end{align}
+which we can write more coincisely as
+\begin{equation}
+  \begin{split}
+    \bm{Q} \left( \sqrt{k_j + 1}
+    \langle \varphi_{k + \langle j \rangle}, 
+    W \varphi_l 
+    \rangle
+  \right)_{j = 1}^d
+  &= 
+  \sqrt{\frac{2}{\epsilon}}
+  \Big( \langle (x - q)_j \varphi_k,
+  W \varphi_l \rangle 
+  \Big)_{j=1}^d
+  +
+  \\
+  &
+  - \bm{\overline{Q}} 
+  \Big( 
+    \sqrt{k_j} \langle \varphi_{k - \langle j \rangle}, W \varphi_l  \rangle
+  \Big)_{j=1}^d
+  \end{split}
+\end{equation}
+k
+Assume $F_{00} = \langle \varphi_0, W \varphi_0 \rangle$ is given.
+and fix $j=0$.
+\begin{equation}
+  \begin{split}
+    F_{1j} &= \alpha \langle (x - q) \varphi_0, W \varphi_j  \rangle
+    \hspace{1cm} F_{10}, F_{11}?
+    \\
+    F_{2j} & =
+  \end{split}
+\end{equation}
+\\
+\textcolor{blue}{Everythin should agree once you invert $Q$ - to check}
+\\
+Have a lattice showing ...
+% CLARIFICATORY EXAMPLE FOR RECURSIVE RELATION
+% TO SOLVE INTEGRALS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Transformation to a tensor product form}
+If the covariance matrix $PQ^{-1}$ is diagonal, then $R,I$ would be as 
+well and consequently we would have a chain of $d=1$ integral, meaning for 
+example that there would be no dependence on $\xi_{i}$ for $i \in \{2,...,d \}$
+in the integral in $\xi_1$. In particular, this would mean that the projection 
+would truly require only a one dimensional integral. 
+\\
+The transformation that is discussed in \cite{hagedornSymmetricKroneckerProducts2017}
+transforms the Hagedorn wavepackets into a representation where the polynomials are given 
+as a product of $1-d$ scaled Hermite polynomials but the complex Gaussian part remains unchanged 
+with the same set of parameters and so not really suited for our case. However, this may come 
+in handy if we are not able to find an expression for the Hagedorn polynomials in $d>1$...?
+and numerical 
+\\
+If we were to transform to a Hagedorn basis with a diagonal covariance matrix (it would 
+still need to satisfy lemma 1.1), then the following additional issues may arise:
+%In essence, a Hagedorn wavepacket $\varphi^{\epsilon}_k$ can be re-written as 
+%\begin{align}
+%  \varphi_k^{\epsilon}[\Pi] = \varphi
+%\end{align}
+%%%%%%%%
+
+    \section{Quantum Molecular Dynamics}
+    For the purposes of the algorithms outlined in 
+    this chapter we modify the assumptions for 
+    the potential in the TDSE 
+    \cite{schrodingerUndulatoryTheoryMechanics1926b}
+    \begin{align}
+          i\epsilon \partial_t \psi = H \psi \hspace{1cm}
+          H = -\frac{\epsilon^2}{2}\Delta + V + W
+          \label{Schrodinger}
+    \end{align}
+    such that  
+    \begin{itemize}
+      \item $V(x)$ is quadratic and (...)
+      \item $W(x)$ is the non-quadratic remainder term
+    \end{itemize}
+    \textcolor{red}{\textbf{Questions:}}
+    \begin{itemize}
+      \item What are sufficient conditions to existence and uniqueness?
+      \item Counterexample to existence/uniqueness?(!!)
+      \item Why do we need this subquadratic growth assumption on the 
+        potential?
+      \item What about an example with discontinuous initial data?
+        What would be the weak solution...?
+    \end{itemize}
+

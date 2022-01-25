@@ -1,0 +1,133 @@
+\document[./main_hagedorn.tex]{subfiles}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\usepackage{amsmath}
+
+\begin{document}
+%%%%%%%%%%%
+%
+%
+%   Outline and motivation
+%
+%
+%%%%%%%%%%
+\subsection{Change of co-ordinates}
+In order to apply the one dimensional transition formula we need to rotate the co-ordinate 
+axes such that one co-ordinate lies parallel to $p_{c}$.
+Hence, we want a matrix $R$ satisfying
+\begin{itemize}
+  \item $Rp_c = (\|p_c\|,0,...,0)$ - align momentum vector with one axis 
+  \item $R^T = R^{-1}$ (orthogonality)
+  \item $\det(R) = 1$ (keep the same orientation of the basis)
+\end{itemize}
+We construct it by applying the Gram-Schmidt process to the vector 
+$\frac{p_c}{\| p_c \|}$, i.e. we form an orthonormal basis 
+$\{r_1 = \frac{p_c}{\| p_c \|}, r_2, ..., r_d \}$. Stacking this vectors into 
+a matrix R as rows yields the desired rotation matrix $R$, that is 
+\begin{align}
+  R =
+  \begin{bmatrix}
+    \frac{p_c^T}{\| p_c \|} \\
+    r_2^T \\
+    ... \\
+    r_d^T \\
+  \end{bmatrix}
+\end{align}
+If $\det(R) = -1$ then multiply its last column by $-1$.
+(\textcolor{red}{There is also another way of doing it called Householder reflection
+which is cheaper although not sure in what it consists yet} 
+\\
+Applying the change of coordinates to the wavepacket 
+at the crossing yields
+\begin{align}
+  \hat{\psi}^{\pm}(\tilde{\xi},t_c) 
+  &= 
+  \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+  \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) 
+  \varphi_k^\epsilon[\hat{\Pi}^{\pm}(t_c)](R^{T}\tilde{\xi})
+\end{align}
+Since the $\varphi_k^{\epsilon}$'s obey recurrence relation 
+\eqref{hagedorn:hagedorn_wavepackets:recursive_relation} we only need to consider 
+the change of coordinates for the zero$^{th}$ order wavepacket 
+\eqref{hagedorn:hagedorn_wavepackets:complex_gaussian}
+\begin{align}
+  \varphi_0^{\epsilon}[\hat{\Pi}](\tilde{\xi}) 
+  &
+  \propto
+  \exp{\left( \frac{i}{2\epsilon}
+      (R^T\tilde{\xi}-p)^TQP^{-1}(R^T\tilde{\xi}-p) +
+  \frac{i}{\epsilon}q^T(R^T\tilde{\xi}-p)\right)}
+  \notag
+  \\
+  &=
+  \exp{\left( \frac{i}{2\epsilon}
+      (R^T(\tilde{\xi}-Rp))^TQP^{-1}R^T(\tilde{\xi}-Rp) +
+  \frac{i}{\epsilon}q^TR^T(\tilde{\xi}-Rp)\right)}
+  \notag
+  \\
+  &=
+  \exp{\left( \frac{i}{2\epsilon}
+      (\tilde{\xi}-Rp)^TRQP^{-1}R^T(\tilde{\xi}-Rp) +
+  \frac{i}{\epsilon}(Rq)^T(\tilde{\xi}-Rp)\right)}
+  \notag
+  \\
+  &=
+  \exp{\left( \frac{i}{2\epsilon}
+      (\tilde{\xi}-Rp)^TRQ(RP)^{-1}(\tilde{\xi}-Rp) +
+  \frac{i}{\epsilon}(Rq)^T(\tilde{\xi}-Rp)\right)}
+\end{align}
+where we have simply applied transpose rules for each equality.
+Perhaps expected, a rotation of the co-ordinate axes yields a new parameter
+set $\hat{\Pi}^\prime = \left\{Rp, Rq, RP, RQ \right\}$ 
+for the family of Hagedorn wavepackets. Indeed, the matrices $RP$ and 
+$RQ$ still satisfy the symplectic properties of 
+Lemma \ref{hagedorn:hagedorn_orthogonal_projection:lemma:symplectic_equations} since 
+\begin{equation}
+  \begin{split}
+    & (RP)^T (RQ) - (RQ)^T(RP) =
+    \\
+    & P^TR^T RQ - Q^TR^TRP = 
+    \\
+    & P^TQ - Q^TP = 0
+  \end{split}
+\end{equation}
+and similarly 
+\begin{equation}
+  \begin{split}
+    & (RP)^* (RQ) - (RQ)^*(RP) =
+    \\
+    & P^*R^* RQ - Q^*R^*RP = 
+    \\
+    & P^*R^T RQ - Q^*R^TRP = 
+    \\
+    & P^*Q - Q^*P = 2iI_d
+  \end{split}
+\end{equation}
+With these new set of parameters we can then use the recurrence relation of 
+equation \eqref{hagedorn:hagedorn_wavepackets:recursive_relation} to yield 
+the higher order wavepackets. 
+%%%%%%%%
+%
+%
+%       TWO DIMENSIONAL CASE
+%
+%
+%%%%%%%%
+    %In this case, the wavepacket at the crossing with the first component varying along the 
+    %direction of $p_c$ is given by 
+    %\begin{align}
+    %  \hat{\psi}^{\pm}(\tilde{\xi},t_c) 
+    %  &= 
+    %  \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+    %  \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) 
+    %  \varphi_k^\epsilon[\hat{\Pi}^{\pm}(t_c)](R_{-\theta}\tilde{\xi})
+    %  \\
+    %  &
+    %  \exp{\left(-\frac{i}{\epsilon}S^{\pm}(t_c)\right)}
+    %  \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) 
+    %  p_k(R_{-\theta}\tilde{\xi})\varphi_0^\epsilon[\hat{\Pi}^{\pm}(t_c)](R_{-\theta}\tilde{\xi})
+    %\end{align}
+    %where $\tilde{\xi} = R_{-\theta}\xi $  ??
+\end{itemize}
+\end{document}
