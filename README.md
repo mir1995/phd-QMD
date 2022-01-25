@@ -1,4 +1,4 @@
-# Links of projects
+# Links to projects
 
 Each project is contained in a subdirectory of the repository:
 
