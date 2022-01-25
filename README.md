@@ -9,5 +9,5 @@ The final thesis documented is written inside the [thesis](./thesis) directory.
 ## Todo:
 
  - [ ] Organise repository
- - [ ] ...
+ - [ ] Explain the content of each directory
  - [ ] Third todo
