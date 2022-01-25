@@ -1,4 +1,4 @@
-# Links to projects
+# Links to projects/PDFs
 
 Each project is contained in a subdirectory of the repository:
 
