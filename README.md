@@ -6,7 +6,7 @@ Each project is contained in a subdirectory of the repository. To access directl
 
 The final thesis documented is written inside the [thesis](./thesis) directory.
 
-Todo:
+## Todo:
 
  - [ ] Organise repository
  - [ ] ...
