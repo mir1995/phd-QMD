@@ -1,6 +1,6 @@
 # Links to projects/PDFs
 
-Each project is contained in a subdirectory of the repository:
+Each project is contained in a subdirectory of the repository. To access directly the PDF click on [pdf] next to the preject of interest.
 
  - [Hagedorn evolution and Speradiabatic transitions](./hagedorn) -> [pdf](./hagedorn/latexbuild/main_hagedorn.pdf)
 
