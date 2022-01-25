@@ -2,6 +2,6 @@
 
 Each project is contained in a subdirectory of the repository:
 
- - [01-first-task](./01-first-task)
+ - [hagedorn evolution and superadiabatic transitions](./hagedorn)
 
 The final thesis documented is written inside the [thesis](./thesis) directory.
