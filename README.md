@@ -1,7 +1,13 @@
-# Links to projects
+# Links to projects/PDFs
 
-Each project is contained in a subdirectory of the repository:
+Each project is contained in a subdirectory of the repository. To access directly the PDF click on 'pdf' link next to the preject of interest.
 
- - [01-first-task](./01-first-task)
+ - [Hagedorn evolution and Superadiabatic transitions](./hagedorn)    ([pdf](./hagedorn/latexbuild/main_hagedorn.pdf))
 
 The final thesis documented is written inside the [thesis](./thesis) directory.
+
+## Todo:
+
+ - [ ] Organise repository
+ - [ ] Explain the content of each directory
+ - [ ] Third todo
