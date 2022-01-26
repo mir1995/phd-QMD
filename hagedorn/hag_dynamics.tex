@@ -5,7 +5,7 @@
 \subsection{Semiclassical dynamics}
 \subsubsection{Quadratic potential}
 Consider a one level TDSE with a quadratic potential 
-$V(\bm{x})$ and $\varphi_k^{\epsilon}$ as initial condition, 
+$V(\bm{x})$ and $\varphi_k^{\epsilon}[\Pi]$ as initial condition, 
 for some $k \in \mathbb{N}^d$. 
 Then, Hagedorn showed that the solution is fully described in 
 terms of a system of ordinary differential equations for the parameter set $\Pi$,
@@ -52,9 +52,10 @@ Since
       \\
       &=
       e^{i\frac{\epsilon}{2}t \Delta} e^{-\frac{i}{\epsilon}tV} e^{i\frac{\epsilon}{4}t c} \varphi_{0}(x,0)
+      \\
+      &= \cdots
     \end{split}
   \end{equation}
-  ...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %
@@ -76,18 +77,79 @@ from a practical perspective.
 %
 %
 %
-% GENERAL POTENTIALS: DIRAC-FRENKEL VARIATIONAL APPROXIMATION 
+% NON-QUADRATIC POTENTIALS: DIRAC-FRENKEL VARIATIONAL APPROXIMATION 
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{General potentials}
-Consider the quadratic and non-quadratic remainder term of the potential 
-separately.
-\textcolor{blue}{Use the picture to aid with the explanation}
-Now consider as initial condition a linear combination of Hagedorn 
-wavepackets $\sum^{\mathcal{K}} \varphi_k$
+\subsubsection{Non-quadratic potentials}
+\textcolor{red}{I have chosen perhaps the 
+non standard convention of conjugating the second entry which will entail having to 
+put the basis vectors in the second entry when doing the projection, I think the convention 
+is to conjugate the first entry - to check}
 \\
-while the coefficients
+\\
+Let $W(x)$ denote the non-quadratic term of the potential and consider a linear 
+combination of Hagedorn wavepackets as initial condition, that is 
+$\psi(x,0) = \sum_{k \in \mathcal{K}} c_k \varphi_k^\epsilon[\Pi]$ subject 
+to $\sum_{k \in \mathcal{K}} |c_k|^2 = 1$. 
+Since $W(x) \not = 0$, we seek an approximate solution 
+$\psi_{\mathcal{K}}(x,t) := e^{\frac{i}{\epsilon}S(t)}\sum_{k \in \mathcal{K}} c_k(t) \varphi_k^\epsilon[\Pi]$
+such that the residual between the exact solution $\psi(x,t)$ and 
+$\psi_{\mathcal{K}}(x,t) \in span(\{\varphi_k\}_{k \in \mathcal{K}})$ is minimised
+(see the illustration in Figure ...).
+In \cite{lubichQuantumClassicalMolecular2008} this is formalised via the so-called 
+Dirac-Frenkel variational approximation principle which results in finding 
+$\frac{d}{dt}c_k$ such that
+\textcolor{red}{projecting the residual on the time derivative would be a weaker 
+requirement - you can be orthogonal to a line in a plane but not to the all plane. and 
+we want to be orthogonal to the all subspace since we are already using those 
+basis sets}
+\begin{equation}
+  \begin{split}
+  \left\langle 
+    -\frac{i}{\epsilon} H \psi_{\mathcal{K}} - \partial_t \psi_{\mathcal{K}} , \varphi_{k} 
+  \right\rangle  = 0 \hspace{1cm} 
+\forall \text{ } k \in \mathcal{K}
+  \end{split}
+\end{equation}
+Expanding the above equation we have 
+\begin{equation}
+  \begin{split}
+    \sum_{l \in \mathcal{K}} 
+    \left\langle 
+      - \frac{i}{\epsilon} H c_l e^{\frac{i}{\epsilon}S(t)} \varphi_l - \partial_t (c_l e^{\frac{i}{\epsilon}S(t)} \varphi_l)
+      , \varphi_k
+    \right\rangle
+    = 0
+  \end{split}
+\end{equation}
+and since 
+\begin{equation}
+  \begin{split}
+    H c_l e^{\frac{i}{\epsilon}S(t)} \varphi_l 
+    &=
+    (H - W) (c_l e^{\frac{i}{\epsilon}S(t)} \varphi_l) +
+    W (c_l e^{\frac{i}{\epsilon}S(t)} \varphi_l)
+  \\
+    \partial_t (c_l e^{\frac{i}{\epsilon}S(t)} \varphi_l)
+    &=
+    \dot{c_l} e^{\frac{i}{\epsilon}S(t)} \varphi_l 
+    - c_l\frac{i}{\epsilon}  (H - W)e^{\frac{i}{\epsilon}S(t)} \varphi_l 
+  \end{split}
+\end{equation}
+by the orthonormality property of the Hagedorn wavepackets we have 
+\begin{equation}
+  \begin{split}
+    \dot{c}_l
+    =
+    \sum_{l \in \mathcal{K}} 
+    - \frac{i}{\epsilon} c_l
+    \left\langle 
+        W \varphi_l, \varphi_k 
+    \right\rangle
+  \end{split}
+\end{equation}
+so that
 $\bm{c}(t) := (c_k(t))_{k \in \mathcal{K}}$ 
 satisfy the following differential equation 
 \begin{align}
@@ -95,7 +157,7 @@ satisfy the following differential equation
   \bm{F}(t)\bm{c}(t)
   \label{hagedorn:hagedorn_dynamics:coefficient:matrix}
 \end{align}
-where $\bm{F}_{kl}(t) = \langle \varphi_k, W \varphi_l \rangle  
+with $\bm{F}_{kl}(t) = \langle W \varphi_l, \varphi_k \rangle  
 = \overline{\bm{F}_{lk}}$.
 \\
 \textcolor{blue}{comment on the kind of system you obtained above intuitively and 
@@ -159,77 +221,80 @@ while an higher order method in \cite{blanesHighOrderEfficient2020}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Recursive relation for the coefficient matrix (better title)}
-\textcolor{red}{I need to specify this somewhere but I have chosen perhaps the 
-non standard convention of conjugating the second entry which will entail having to 
-put the basis vectors in the second entry when doing the projection, I think the convention 
-is to conjugate the first entry - check it out}
-\\
-For non-quadratic potentials, the major computational effort 
-arises in the computation of the (time dependent) block matrix $\bm{F}$.
+\subsubsection{Computing the weights for non-quadratic potentials}
+\textcolor{red}{Why are we actually doing this? are we sure there is an 
+actual advantage?}
+In this section we address the computation of the (time dependent) block matrix $\bm{F}$.
 Its entries are $d$-dimensional integrals which must be solved at 
-each time step \textcolor{red}{Check numerical scheme}.
-\textcolor{blue}{
-  \textbf{Numerical integration - sampling from the Gaussian}
-\begin{itemize}
-  \item Surely we can recycle the sampled points at time 
-    zero since we can just translate the Gaussian in the integrand
-    from which we are sampling from to $\bm{q} = 0$ (and off course 
-    the translation in the potential term)
-  \item Since the time dependence of the integral appears in the integrand 
-    only in the parameter set (for non time dependent potentials), 
-    we can also morph the sampled points according to how the 
-    covariance matrix evolves in time...?
-  \item We still obviously need evaluation of the potential at those 
-    points but as far as the sampling goes it can be done only once...?
-  \item Still for the potential you could also recycle the evaluation 
-    for neighbouring times?
-  \item How can it be that Monte Carlo is dimension independent but QMC 
-    is dimension dependent but nonetheless achieves better convergence? 
-    See effective dimension in \cite{wangEffectiveDimensionQuasiMonte2003} 
-\end{itemize}}
-\textcolor{red}{Is there any way to comment 
-on} $\frac{d}{dt}\langle \varphi_k, W \varphi_l  \rangle$ - all it is 
-changing are the parameters of the wavepackets - translation in position space 
-and momentum space and dilation/contraction. One could imagine recycling 
-the sampled points for neighbouring times? or better if I know, how the 
-integral involving the Gaussian evolves, can I say anything about the 
-evolution of the higher order moments. recycling the sample points since 
-you would also consider tranlating the function to zero, and then simply 
-apply a linear tranformation to the sampled points to account for the 
-spread of the wavepacket...? Can I not apply this on the simple resulting 
-integral...? I do not think so as you would have already evaluated the integrand?
-whose numerical implementation 
-for this algorithm can soon get out of hand. 
-\textcolor{red}{What is the best that one can hope for? How would it scale 
-with the dimension...? Is Monte Carlo independent of the dimension...?
-would that mean I could use the same number of points independent of the dimension?#
-what if I do integration and then differentiation with Monte Carlo - is that 
-justified?}
-\\
-\\
+each time step \textcolor{red}{Check numerical scheme}
+\begin{equation}
+  \begin{split}
+    \langle 
+      W \varphi_l , \varphi_k 
+    \rangle
+    &= 
+    \int_{\mathbb{R}^d}
+    W(x) \varphi_l \bar{\varphi}_k dx 
+   % \\
+   % &=
+   % \int_{\mathbb{R}^d}
+   % W(x) \varphi_l \bar{\varphi}_k dx 
+  \end{split}
+\end{equation}
+%\begin{itemize}
+%  \item Surely we can recycle the sampled points at time 
+%    zero since we can just translate the Gaussian in the integrand
+%    from which we are sampling from to $\bm{q} = 0$ (and off course 
+%    the translation in the potential term)
+%  \item Since the time dependence of the integral appears in the integrand 
+%    only in the parameter set (for non time dependent potentials), 
+%    we can also morph the sampled points according to how the 
+%    covariance matrix evolves in time...?
+%  \item We still obviously need evaluation of the potential at those 
+%    points but as far as the sampling goes it can be done only once...?
+%  \item Still for the potential you could also recycle the evaluation 
+%    for neighbouring times?
+%  \item How can it be that Monte Carlo is dimension independent but QMC 
+%    is dimension dependent but nonetheless achieves better convergence? 
+%    See effective dimension in \cite{wangEffectiveDimensionQuasiMonte2003} 
+%\end{itemize}}
+%\textcolor{red}{Is there any way to comment 
+%on} $\frac{d}{dt}\langle \varphi_k, W \varphi_l  \rangle$ - all it is 
+%changing are the parameters of the wavepackets - translation in position space 
+%and momentum space and dilation/contraction. One could imagine recycling 
+%the sampled points for neighbouring times? or better if I know, how the 
+%integral involving the Gaussian evolves, can I say anything about the 
+%evolution of the higher order moments. recycling the sample points since 
+%you would also consider tranlating the function to zero, and then simply 
+%apply a linear tranformation to the sampled points to account for the 
+%spread of the wavepacket...? Can I not apply this on the simple resulting 
+%integral...? I do not think so as you would have already evaluated the integrand?
+%whose numerical implementation 
+%for this algorithm can soon get out of hand. 
+%\textcolor{red}{What is the best that one can hope for? How would it scale 
+%with the dimension...? Is Monte Carlo independent of the dimension...?
+%would that mean I could use the same number of points independent of the dimension?#
+%what if I do integration and then differentiation with Monte Carlo - is that 
+%justified?}
+%\\
+%\\
 In \cite{bourquinNumericalAlgorithmsSemiclassical2017}
-this has been addressed through (sparse) quadrature methods (what about QMC?)
-whose computational complexity is still exponential in nature \textcolor{red}{?}
-\textcolor{red}{But why? Is there a reason why quadrature methods would be better 
-in this case and MC methods?}
-\textcolor{red}{what about you solve the d-dimensional gaussian integral - 
-what can you say about the derivatives for the higher order terms...?}
-\\
-In this section, we investigate alternative numerical and asymptotic integration 
-methods which have (?) better scaling performance?complexity?. 
-Further, we compute the entries of $\bm{F}$ recursively from knowledge of $\bm{F}_{00}$ 
-and its "higher order moments" $\langle (\bm{x} - \bm{q}) \rangle$ alone. In other words, 
-given that the Hagedorn wavepackets are polynomials of degree $k$ we have used the 
-linearity of the integral to compute the each monomial where the coefficients are 
-hidden in the multiplying matrices...(in quotes)
-Consequently, the problem will reduce to computing $\bm{F}_{00}$ and its higher 
-order moments. 
-\\
-\\
-In what follows, $W(\bm{x})$ denotes as always the non-quadratic remainder
-term of the potential matrix which we will take to be real valued.
-e re-write the recursive relation as \textcolor{red}{At some 
+the evaluation of these integrals has been addressed through (sparse) 
+quadrature methods 
+%(what about QMC?)
+%whose computational complexity is still exponential in nature \textcolor{red}{?}
+%\textcolor{red}{But why? Is there a reason why quadrature methods would be better 
+%in this case and MC methods?}
+%\textcolor{red}{what about you solve the d-dimensional gaussian integral - 
+%what can you say about the derivatives for the higher order terms...?}
+%\\
+We investigate alternative numerical (and asymptotic) integration 
+methods. 
+Firstly, by making use of the recursive relation (...) we reduce the evaluation of the integrals 
+to the computation of $\bm{F}_{00}$ and its higher order moments. This should not 
+come as a surprise since the Hagedorn wavepackets are polynomials multiplied by a Gaussians. 
+Let us re-write (ref recursive relation) as follows 
+\textcolor{red}{At some 
 point I will consider translating everything to the origin}
 \begin{equation}
   \left(\sqrt{k_j + 1 } 
@@ -240,7 +305,7 @@ point I will consider translating everything to the origin}
   \bm{Q^{-1}}\bm{\overline{Q}}
   \left(\sqrt{k_j} \varphi^\epsilon_{k - \langle j \rangle } \right)_{j=1}^d
 \end{equation}
-Since $k_j \geq 0 \text{ } \forall \text{ } j$, let $\bm{K}$
+Let $\bm{K}$
 denote the diagonal matrix with diagonal entries 
 $\bm{K}_{jj} = k_j$ for $j \in \{1,...,d\}$.
 Then, multiplying each side of the equality by 
@@ -304,11 +369,11 @@ integrating over $\mathbb{R}^d$ yields
   \end{split}
   \label{hag:dynamics:recurrence:relation:inner:product}
 \end{equation}
-Note that in order to compute
+Hence, in order to compute
 $\langle \varphi^\epsilon_{k + \langle j \rangle}, W \varphi^\epsilon_l  \rangle$ 
 we need the higher order moment of the previous Hagedorn wavepacket
 $\langle (\bm{x} - \bm{q})_j \varphi^\epsilon_{k}, W \varphi^\epsilon_l \rangle $.
-Similarly, we can derive a recurrence relation for these higher order terms.
+In a similar manner, we can derive a recurrence relation for these higher order terms.
 By defining the diagonal matrix $\bm{Y}$ 
 with entries $\bm{Y}_{jj} = (\bm{x} - \bm{q})_j$
 and multiplying both sides of equation 
@@ -434,25 +499,23 @@ $\alpha \in \mathbb{N}^d$, we then have
       \right)_{j=1}^d
 \end{split}
 \end{equation}
-We want to make clear the dependence in the computation of $F_{ij}$ on the 
-other ...terms/moments?\\\\
-For a given index, what other indices do I need?
-To understand this dependence it suffices to work with the indices.
-\\ 
-Is there an easy way I can explain this? A graph? Something else?
-\textbf{Simpler case:} Let $k \in \mathbb{N}^d$ and fix $l = 0_{\mathbb{N}^d}$. 
-Looking at equation bla bla 
-Then the intregral with $k + \langle j \rangle$ requires computation of only 
-the first term in equation ... bla bla ... since the second term 
-will have been already computed since we are doing this recursively.  
-
-\textcolor{blue}{It makes sense just by arguing as them being polynomials, also 
-recall that you would have had computed already the second term}
-\textcolor{red}{and then what you want to say is that for a given index $\alpha$, 
-what cross terms do you need to re-compute, which ones you need to recycle and so on}
-\textcolor{blue}{I am 100\% sure there is a way to work through it in terms 
-of indices alone...}
-\textcolor{red}{I wonder if we can think of the algorithm just in terms of indeces then}
+%We want to make clear the dependence in the computation of $F_{ij}$ on the 
+%other ...terms/moments?\\\\
+%For a given index, what other indices do I need?
+%To understand this dependence it suffices to work with the indices.
+%\\ 
+%Is there an easy way I can explain this? A graph? Something else?
+%\textbf{Simpler case:} Let $k \in \mathbb{N}^d$ and fix $l = 0_{\mathbb{N}^d}$. 
+%Looking at equation bla bla 
+%Then the intregral with $k + \langle j \rangle$ requires computation of only 
+%the first term in equation ... bla bla ... since the second term 
+%will have been already computed since we are doing this recursively.  
+%
+%\textcolor{blue}{It makes sense just by arguing as them being polynomials, also 
+%recall that you would have had computed already the second term}
+%\textcolor{red}{and then what you want to say is that for a given index $\alpha$, 
+%what cross terms do you need to re-compute, which ones you need to recycle and so on}
+%\textcolor{red}{I wonder if we can think of the algorithm just in terms of indeces then}
 Note that we have kept $l$ fixed above, the reason being that 
 we can use the conjugate symmetry property to fill in the 
 other entries.

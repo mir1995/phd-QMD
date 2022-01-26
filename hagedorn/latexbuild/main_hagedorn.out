@@ -5,25 +5,27 @@
 \BOOKMARK [2][-]{subsection.1.3}{Semiclassical dynamics}{section.1}% 5
 \BOOKMARK [3][-]{subsubsection.1.3.1}{Quadratic potential}{subsection.1.3}% 6
 \BOOKMARK [3][-]{subsubsection.1.3.2}{Cubic potentials}{subsection.1.3}% 7
-\BOOKMARK [3][-]{subsubsection.1.3.3}{General potentials}{subsection.1.3}% 8
-\BOOKMARK [3][-]{subsubsection.1.3.4}{Recursive relation for the coefficient matrix \(better title\)}{subsection.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.4}{Numerical/Algorithmic implementation}{section.1}% 10
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Static}{subsection.1.4}% 11
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Adaptive}{subsection.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.5}{Approximation of F and higher order cross terms}{section.1}% 13
-\BOOKMARK [1][-]{section.2}{Non-adiabatic transitions: avoided crossings}{}% 14
-\BOOKMARK [2][-]{subsection.2.1}{Change of co-ordinates}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.2}{Projecting onto Hagedorn basis}{section.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Different parameter set }{subsection.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.3}{d-dimensional case}{section.2}% 18
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Monte Carlo Integration}{subsection.2.3}% 19
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Taylor expansion + Gaussian Integrals}{subsection.2.3}% 20
-\BOOKMARK [3][-]{subsubsection.2.3.3}{One dimension - principle of stationary phase}{subsection.2.3}% 21
-\BOOKMARK [1][-]{section*.6}{Appendices}{}% 22
-\BOOKMARK [1][-]{appendix.a.A}{Transmitted Wavepacket}{}% 23
-\BOOKMARK [2][-]{subsection.a.A.1}{Transmitted wavepacket}{appendix.a.A}% 24
-\BOOKMARK [3][-]{subsubsection.a.A.1.1}{Constant eigenvalues}{subsection.a.A.1}% 25
-\BOOKMARK [3][-]{subsubsection.a.A.1.2}{Non-constant + tilted crossings}{subsection.a.A.1}% 26
-\BOOKMARK [1][-]{appendix.a.B}{Proof of concept for choosing different parameter set in the projection}{}% 27
-\BOOKMARK [2][-]{subsection.2.1}{One dimensional case}{appendix.a.B}% 28
-\BOOKMARK [1][-]{appendix.3}{Transmitted wavepacket recurrence relation derivation}{}% 29
+\BOOKMARK [3][-]{subsubsection.1.3.3}{Non-quadratic potentials}{subsection.1.3}% 8
+\BOOKMARK [3][-]{subsubsection.1.3.4}{Computing the weights for non-quadratic potentials}{subsection.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.4}{Numerical integration for the Hagedorn coefficients}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.5}{Algorithmic implementation}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Static}{subsection.1.5}% 12
+\BOOKMARK [3][-]{subsubsection.1.5.2}{Adaptive}{subsection.1.5}% 13
+\BOOKMARK [1][-]{section.2}{Computation of observables}{}% 14
+\BOOKMARK [1][-]{section.3}{Non-adiabatic transitions: avoided crossings}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Change of co-ordinates}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Superadiabatic transition}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Projecting onto Hagedorn basis}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Different parameter set }{subsection.3.3}% 19
+\BOOKMARK [2][-]{subsection.3.4}{d-dimensional case}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Monte Carlo Integration}{subsection.3.4}% 21
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Taylor expansion + Gaussian Integrals}{subsection.3.4}% 22
+\BOOKMARK [3][-]{subsubsection.3.4.3}{One dimension - principle of stationary phase}{subsection.3.4}% 23
+\BOOKMARK [1][-]{section*.4}{Appendices}{}% 24
+\BOOKMARK [1][-]{appendix.a.A}{Transmitted Wavepacket}{}% 25
+\BOOKMARK [2][-]{subsection.a.A.1}{Transmitted wavepacket}{appendix.a.A}% 26
+\BOOKMARK [3][-]{subsubsection.a.A.1.1}{Constant eigenvalues}{subsection.a.A.1}% 27
+\BOOKMARK [3][-]{subsubsection.a.A.1.2}{Non-constant + tilted crossings}{subsection.a.A.1}% 28
+\BOOKMARK [1][-]{appendix.a.B}{Proof of concept for choosing different parameter set in the projection}{}% 29
+\BOOKMARK [2][-]{subsection.2.1}{One dimensional case}{appendix.a.B}% 30
+\BOOKMARK [1][-]{appendix.3}{Transmitted wavepacket recurrence relation derivation}{}% 31

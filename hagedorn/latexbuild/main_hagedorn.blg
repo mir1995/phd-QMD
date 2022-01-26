@@ -1,26 +1,12 @@
 [0] Config.pm:312> INFO - This is Biber 2.15
 [0] Config.pm:315> INFO - Logfile is 'latexbuild/main_hagedorn.blg'
-[60] biber:330> INFO - === Wed Jan 19, 2022, 16:43:37
-[71] Biber.pm:415> INFO - Reading 'latexbuild/main_hagedorn.bcf'
-[133] Biber.pm:952> INFO - Found 12 citekeys in bib section 0
-[144] Biber.pm:4334> INFO - Processing section 0
-[152] Biber.pm:4523> INFO - Looking for bibtex format file 'Hagedorn.bib' for section 0
-[155] bibtex.pm:1682> INFO - LaTeX decoding ...
-[179] bibtex.pm:1494> INFO - Found BibTeX data source 'Hagedorn.bib'
-[240] Biber.pm:4523> INFO - Looking for bibtex format file 'Sampling.bib' for section 0
-[241] bibtex.pm:1682> INFO - LaTeX decoding ...
-[243] bibtex.pm:1494> INFO - Found BibTeX data source 'Sampling.bib'
-[247] Biber.pm:4523> INFO - Looking for bibtex format file 'WaveHopping.bib' for section 0
-[253] bibtex.pm:1682> INFO - LaTeX decoding ...
-[323] bibtex.pm:1494> INFO - Found BibTeX data source 'WaveHopping.bib'
-[325] Utils.pm:395> WARN - Duplicate entry key: 'lubichQuantumClassicalMolecular2008' in file 'WaveHopping.bib', skipping ...
-[332] Biber.pm:4523> INFO - Looking for bibtex format file 'Superadiabatic.bib' for section 0
-[334] bibtex.pm:1682> INFO - LaTeX decoding ...
-[351] bibtex.pm:1494> INFO - Found BibTeX data source 'Superadiabatic.bib'
-[380] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[380] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[381] Biber.pm:4162> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[381] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[394] bbl.pm:651> INFO - Writing 'latexbuild/main_hagedorn.bbl' with encoding 'UTF-8'
-[400] bbl.pm:754> INFO - Output to latexbuild/main_hagedorn.bbl
-[400] Biber.pm:128> INFO - WARNINGS: 1
+[56] biber:330> INFO - === Tue Jan 25, 2022, 11:05:01
+[68] Biber.pm:415> INFO - Reading 'latexbuild/main_hagedorn.bcf'
+[131] Biber.pm:952> INFO - Found 12 citekeys in bib section 0
+[141] Biber.pm:4334> INFO - Processing section 0
+[149] Biber.pm:4523> INFO - Looking for bibtex format file '../bibliography/Hagedorn.bib' for section 0
+[151] bibtex.pm:1682> INFO - LaTeX decoding ...
+[175] bibtex.pm:1494> INFO - Found BibTeX data source '../bibliography/Hagedorn.bib'
+[235] Biber.pm:4523> INFO - Looking for bibtex format file '../bibliography/Sampling.bib' for section 0
+[336] Utils.pm:411> ERROR - Cannot find '../bibliography/Sampling.bib'!
+[337] Biber.pm:132> INFO - ERRORS: 1

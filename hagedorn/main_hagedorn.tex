@@ -50,7 +50,6 @@ style=alphabetic,
 sorting=ynt
 ]{biblatex}
 \addbibresource{../bibliography/Hagedorn.bib}
-\addbibresource{../bibliography/Sampling.bib}
 \addbibresource{../bibliography/WaveHopping.bib}
 \addbibresource{../bibliography/Superadiabatic.bib}
 
@@ -97,6 +96,7 @@ sorting=ynt
     approach, i.e. just extending the Dirac-Frenkel variational 
     approximation. 
   \item Propagation of wavepackets for conical intersections \cite{fermanian-kammererPropagationWavePackets2020}
+  \item Hagedorn wavepackets as eigenfunctions of the Harmonic oscillator
 \end{itemize}}
   %\textbf{Keywords:} complex gaussians; parameter dependent orthonormal basis; 
   %splitting methods; high-dimensional integrals; positive definite (symmetric)
@@ -156,10 +156,41 @@ sorting=ynt
       \newpage
       \subfile{hag_dynamics} % how to solve things
       \subfile{hag_recursion} 
-      \newpage
-
+      \section{Computation of observables}
+      How would we be computing the observables of interest...?
       \subfile{hag_avoided}
       \subfile{hag_rotation} % needs to be further justified 
+      \subsection{Superadiabatic transition}
+      We address the application of the Superadiabatic formula to an Hagedorn 
+      wavepacket. Consider an incoming Hagedorn wavepacket 
+      at the crossing 
+      $\hat{\psi}^{\pm}(\xi,t_c) 
+      = 
+      e^{\frac{i}{\epsilon}S(t)}
+      \varphi_{k}^\epsilon[\hat{\Pi}(t_c)]$. If we were to apply the 
+      Superadiabatic formula to the co-ordinate in the direction of the 
+      momentum, say $\xi_1$ then we would obtain 
+      \begin{equation}
+        \begin{split}
+          \hat{\psi}^{\mp}(t_c)
+          =
+          e^{\frac{i}{\epsilon}S(t)}
+          - \Theta(\xi_1^2 - 4 \delta)
+          \frac{\xi_1 + v }{2 |v|} 
+          e^{i \tau_c |\xi_1 - v| / (2  \delta \epsilon)}
+            \varphi_{k}^\epsilon[\hat{\Pi}](\tilde{\xi})  
+        \end{split}
+      \end{equation}
+      where $v = \text{sgn}(\xi_1) \sqrt{\xi_1^2 - 4 \delta}$ and $\delta = \rho(CoM)$
+      \textcolor{red}{correct the formula so as to account the differences for 
+      the hopping depending on which level it lies}
+      The application of the formula in this form works well enough for the slice 
+      of the wavepacket sitting on the center of mass but clearly not for the ones 
+      orthogonal to it. For instance, suppose the wavepacket were to cross 
+      with its center of mass directly over a conical intersection. Then, we would 
+      have $\delta=0$ so that the all incoming wavepacket gets transmitted. This would 
+      obviously yield incorrect results; we need to modify the one dimensional 
+      formula for each slice giving a different $\delta$ for each. 
       \subfile{hag_projection}  
 
   \newpage

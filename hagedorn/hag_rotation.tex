@@ -13,7 +13,11 @@
 %
 %%%%%%%%%%
 \subsection{Change of co-ordinates}
-In order to apply the one dimensional transition formula we need to rotate the co-ordinate 
+The aim is to apply the one dimensional Superadiabatic formula to parallel strips of the 
+incoming wavepacket in the direction of the mean momentum at the crossing.
+\textcolor{red}{hence the gap should depend on the directions orthogonal to the mean 
+momentum}
+To this end, we firstly rotate the co-ordinate 
 axes such that one co-ordinate lies parallel to $p_{c}$.
 Hence, we want a matrix $R$ satisfying
 \begin{itemize}
@@ -36,7 +40,7 @@ a matrix R as rows yields the desired rotation matrix $R$, that is
 \end{align}
 If $\det(R) = -1$ then multiply its last column by $-1$.
 (\textcolor{red}{There is also another way of doing it called Householder reflection
-which is cheaper although not sure in what it consists yet} 
+which is computationally cheaper}
 \\
 Applying the change of coordinates to the wavepacket 
 at the crossing yields
@@ -47,10 +51,11 @@ at the crossing yields
   \sum_{k \in \mathcal{K}} c_k^{\pm}(t_c) 
   \varphi_k^\epsilon[\hat{\Pi}^{\pm}(t_c)](R^{T}\tilde{\xi})
 \end{align}
+We want to show that the properties satisfies by the matrices Q,P are still 
+satiied.
 Since the $\varphi_k^{\epsilon}$'s obey recurrence relation 
 \eqref{hagedorn:hagedorn_wavepackets:recursive_relation} we only need to consider 
-the change of coordinates for the zero$^{th}$ order wavepacket 
-\eqref{hagedorn:hagedorn_wavepackets:complex_gaussian}
+the change of coordinates for $\varphi_0^\epsilon$ 
 \begin{align}
   \varphi_0^{\epsilon}[\hat{\Pi}](\tilde{\xi}) 
   &
@@ -77,7 +82,7 @@ the change of coordinates for the zero$^{th}$ order wavepacket
       (\tilde{\xi}-Rp)^TRQ(RP)^{-1}(\tilde{\xi}-Rp) +
   \frac{i}{\epsilon}(Rq)^T(\tilde{\xi}-Rp)\right)}
 \end{align}
-where we have simply applied transpose rules for each equality.
+where we have made use of the transposition rules in each equality.
 Perhaps expected, a rotation of the co-ordinate axes yields a new parameter
 set $\hat{\Pi}^\prime = \left\{Rp, Rq, RP, RQ \right\}$ 
 for the family of Hagedorn wavepackets. Indeed, the matrices $RP$ and 
@@ -104,9 +109,6 @@ and similarly
     & P^*Q - Q^*P = 2iI_d
   \end{split}
 \end{equation}
-With these new set of parameters we can then use the recurrence relation of 
-equation \eqref{hagedorn:hagedorn_wavepackets:recursive_relation} to yield 
-the higher order wavepackets. 
 %%%%%%%%
 %
 %
