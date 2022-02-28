@@ -346,6 +346,56 @@ We also note that $I$ is real symmetric and so diagonalizable
 %%%%%%%%%%%%
 %
 %
+%             ERROR ESTIMATES FOR HAGEDORN WAVEPACKET 
+%
+%
+%%%%%%%%%%%%
+\subsection{Approximation error by Hagedorn basis}
+A natural question that arises as we approximate the transmitted wavepacket 
+$\hat{\psi}^-$ with a Hagedorn basis is the following:
+\begin{enumerate}
+  \item How large $|\mathcal{K}|$ should be such that the $L^2$ error 
+    (or better the relative error) is less than $\mathcal{TOL}$?
+  \item If the incoming wavepacket is a Hagedorn wavepacket of order $k$ then 
+    the largest coefficient for the projection of Superadiabatic formula should still
+    coincide with $c_k$ and so could I better choose the Hagedorn basis?
+\end{enumerate}
+We can perhaps answer the first question using Theorem 1.2 in \cite{lubichQuantumClassicalMolecular2008}
+about approximation of Scwhartz functions by Hermite basis which is the equivalent to the 
+1d Hagedorn basis. We report the statement of the Theorem here below.
+\begin{theorem}{Approximation by Hermite functions}
+  Let ... 
+  Then, 
+  \begin{equation}
+    \begin{split}
+      \|f - P_k f\|
+      \leq
+      (K (K-1) \dots (k-s+1))^{-1/2}
+      \|A^s f\|
+    \end{split}
+  \end{equation}
+\end{theorem}
+We can turn this result into an inequality for the relative error simply by multiplying 
+both sides by $\|f\|$. In a numerical implementation we would like to estimate a-priori 
+the number of wavepackets needed in the approximation for some desired 
+tolerance. There is probably more than one way to do this:
+\begin{enumerate}
+  \item if you know $\|f\|$ you can probably increment the values of $k$ until 
+    you have reached some desired accuracy
+  \item use Theorem above by either estimating $\|A^sf\|$ for $s = K$ or 
+    compute it numerically (although you would have $K$ to play around with)
+    \\
+    Also bear in mind that our transmitted wavepacket is not a Schwartz function - 
+    although this space is dense in $L^2$ so that you can not write it as a limit of such 
+    functions and then pass to the limit ? commutativity could be a problem?
+\end{enumerate}
+I am going to consider the same example as in \cite{lubichQuantumClassicalMolecular2008} 
+to numerically demonstrate the theorem and the importance of changing the parameter 
+set for the transmitted wavepacket projection - although it'd be nice to come 
+up with my own example, perhaps a modified version of it
+%%%%%%%%%%%%
+%
+%
 % TAYLOR EXPANSION + GAUSSIAN INTEGRALS
 %
 %

@@ -2373,8 +2373,11 @@
     <bcf:citekey order="19">bourquinNumericalAlgorithmsSemiclassical2017</bcf:citekey>
     <bcf:citekey order="20">bourquinNonadiabaticTransitionsAvoided2012</bcf:citekey>
     <bcf:citekey order="21">hagedornDeterminationNonadiabaticScattering2005</bcf:citekey>
-    <bcf:citekey order="22">betzSuperadiabaticTransitionsQuantum2009</bcf:citekey>
-    <bcf:citekey order="23">betzNonadiabaticTransitionsMultiple2019</bcf:citekey>
+    <bcf:citekey order="22">lubichQuantumClassicalMolecular2008</bcf:citekey>
+    <bcf:citekey order="23">lubichQuantumClassicalMolecular2008</bcf:citekey>
+    <bcf:citekey order="24">lubichQuantumClassicalMolecular2008</bcf:citekey>
+    <bcf:citekey order="25">betzSuperadiabaticTransitionsQuantum2009</bcf:citekey>
+    <bcf:citekey order="26">betzNonadiabaticTransitionsMultiple2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

@@ -17,15 +17,22 @@
 \BOOKMARK [2][-]{subsection.3.2}{Superadiabatic transition}{section.3}% 17
 \BOOKMARK [2][-]{subsection.3.3}{Projecting onto Hagedorn basis}{section.3}% 18
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Different parameter set }{subsection.3.3}% 19
-\BOOKMARK [2][-]{subsection.3.4}{d-dimensional case}{section.3}% 20
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Monte Carlo Integration}{subsection.3.4}% 21
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Taylor expansion + Gaussian Integrals}{subsection.3.4}% 22
-\BOOKMARK [3][-]{subsubsection.3.4.3}{One dimension - principle of stationary phase}{subsection.3.4}% 23
-\BOOKMARK [1][-]{section*.4}{Appendices}{}% 24
-\BOOKMARK [1][-]{appendix.a.A}{Transmitted Wavepacket}{}% 25
-\BOOKMARK [2][-]{subsection.a.A.1}{Transmitted wavepacket}{appendix.a.A}% 26
-\BOOKMARK [3][-]{subsubsection.a.A.1.1}{Constant eigenvalues}{subsection.a.A.1}% 27
-\BOOKMARK [3][-]{subsubsection.a.A.1.2}{Non-constant + tilted crossings}{subsection.a.A.1}% 28
-\BOOKMARK [1][-]{appendix.a.B}{Proof of concept for choosing different parameter set in the projection}{}% 29
-\BOOKMARK [2][-]{subsection.2.1}{One dimensional case}{appendix.a.B}% 30
-\BOOKMARK [1][-]{appendix.3}{Transmitted wavepacket recurrence relation derivation}{}% 31
+\BOOKMARK [2][-]{subsection.3.4}{Approximation error by Hagedorn basis}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.5}{d-dimensional case}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Monte Carlo Integration}{subsection.3.5}% 22
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Taylor expansion + Gaussian Integrals}{subsection.3.5}% 23
+\BOOKMARK [3][-]{subsubsection.3.5.3}{One dimension - principle of stationary phase}{subsection.3.5}% 24
+\BOOKMARK [1][-]{section.4}{Numerical Integration}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Approximation error for Gauss-Hermite quadrature rule}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Gaussian Hermite Quadrature}{section.4}% 27
+\BOOKMARK [1][-]{section.5}{Numerical results}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{Constant eigenvalues}{section.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Initial condition}{subsection.5.1}% 30
+\BOOKMARK [1][-]{section*.9}{Appendices}{}% 31
+\BOOKMARK [1][-]{appendix.a.A}{Transmitted Wavepacket}{}% 32
+\BOOKMARK [2][-]{subsection.a.A.1}{Transmitted wavepacket}{appendix.a.A}% 33
+\BOOKMARK [3][-]{subsubsection.a.A.1.1}{Constant eigenvalues}{subsection.a.A.1}% 34
+\BOOKMARK [3][-]{subsubsection.a.A.1.2}{Non-constant + tilted crossings}{subsection.a.A.1}% 35
+\BOOKMARK [1][-]{appendix.a.B}{Proof of concept for choosing different parameter set in the projection}{}% 36
+\BOOKMARK [2][-]{subsection.2.1}{One dimensional case}{appendix.a.B}% 37
+\BOOKMARK [1][-]{appendix.3}{Transmitted wavepacket recurrence relation derivation}{}% 38

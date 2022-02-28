@@ -2,7 +2,9 @@
 %THIS IS THE MAIN FILE
 
 % SHARED PREAMBLE START
-
+\usepackage{pgfplots}
+ 
+\pgfplotsset{compat = newest}
 % THEOREMS, LEMMAS AND COROLLARIES
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -174,14 +176,15 @@ sorting=ynt
         \begin{split}
           \hat{\psi}^{\mp}(t_c)
           =
-          e^{\frac{i}{\epsilon}S(t)}
-          - \Theta(\xi_1^2 - 4 \delta)
+          - e^{\frac{i}{\epsilon}S(t)}
+          \Theta(\xi_1^2 - 4 \delta)
           \frac{\xi_1 + v }{2 |v|} 
           e^{i \tau_c |\xi_1 - v| / (2  \delta \epsilon)}
             \varphi_{k}^\epsilon[\hat{\Pi}](\tilde{\xi})  
         \end{split}
       \end{equation}
-      where $v = \text{sgn}(\xi_1) \sqrt{\xi_1^2 - 4 \delta}$ and $\delta = \rho(CoM)$
+      where $v = \text{sgn}(\xi_1) \sqrt{\xi_1^2 - 4 \delta}, 
+      \delta = \rho(x_c)$ and $\tilde{\xi} = (v, \xi_2, ....)$
       \textcolor{red}{correct the formula so as to account the differences for 
       the hopping depending on which level it lies}
       The application of the formula in this form works well enough for the slice 
@@ -191,8 +194,276 @@ sorting=ynt
       have $\delta=0$ so that the all incoming wavepacket gets transmitted. This would 
       obviously yield incorrect results; we need to modify the one dimensional 
       formula for each slice giving a different $\delta$ for each. 
+      \\
+      \textbf{Alternative}
+      \\
+      A better alternative would be to let the gap depend on each slice and therefore 
+      on the directions orthogonal to $\xi_1$. This should correspond to the 
+      following
+      \begin{equation}
+        \begin{split}
+          \hat{\psi}^{\mp}(t_c)
+          &=
+          - e^{\frac{i}{\epsilon}S(t)}
+          \Theta(\| \xi \|^2 - 4 \rho(x_{c_1}, \xi_2, \xi_3, ...)) 
+          \\
+          &
+          \times
+          \frac{\|\xi\| + v }{2 |v|} 
+          e^{i \tau_c \frac{| \| \xi \| - v|}{2  \rho(x_{c_1}, \xi_2, ...) \epsilon}}
+            \varphi_{k}^\epsilon[\hat{\Pi}](\tilde{\xi})  
+        \end{split}
+      \end{equation}
+      where $v = \text{sgn}(\xi_1) \sqrt{ \| \xi \|^2 - 4 \rho(x_{c_1}, \xi_2, ...)}$
+       and $\tilde{\xi} = (v, \xi_2, ....)$
       \subfile{hag_projection}  
 
+  \section{Numerical Integration}
+  In one dimension, the projection integral to reconstruct the transmitted 
+  wavepacket in terms of the Hagedorn basis set can be written in the following 
+  form 
+  \begin{equation}
+   \begin{split}
+     I_{lk} 
+     :=
+      \int_{-\infty}^{+ \infty}
+        f(x) 
+        k(x) dx
+   \end{split} 
+  \end{equation}
+  where $k(x)$ and $f(x)$ are called the weight function and .. 
+  respectively.
+  where we have made the change of variables ...
+  Integrals of this form can be solved rather efficiently using Gauss-Hermite 
+  quadrature rules. The idea behind .. and all other types of Gauss quadrature 
+  is to approximate the integral with a weighted sum 
+  \begin{equation}
+    \begin{split}
+      I_{lk} 
+      \approx 
+      \sum_{i=i}^N 
+      w_{i} f(x_i)
+    \end{split}
+  \end{equation}
+  where $\{w_{i}\}_{i=1}^N$ and $x_i$ are called the weights and the nodes 
+  of the quadrature rule respectively. The nodes could be set a priori for 
+  example in situations where they are given to us and so we are only left to 
+  determine the weights. Otherwise these can be determined. The general idea 
+  behind these methods is that the quadrature rule should be exact for a class 
+  of polynomials up to a certain degree which is determined by the number of nodes $N$.
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% HOW MANY POINTS DO I NEED TO APPROXIMATE THE INTEGRAL 
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Approximation error for Gauss-Hermite quadrature rule}
+A natural question that arises is the following: how many points do I need such 
+that the relative error in the computation of $c_k$ is a below a certain a 
+tolerance value. \textcolor{red}{in \cite{lubichQuantumClassicalMolecular2008} 
+it simply stated that the error in the quadrature rule is $\mathcal{O}(M^-r)$} where 
+$r > 1$ (why r=1 not allowed) satisfies $\|c_k\| \leq C (1+k)^{-r}$. In words, 
+the coefficients of the Hermite expansions decay obeying that bound for some $C \in \mathbb{R}$.
+\\
+The example for $f(x)$ we will be considering is both instructive as an example 
+for the order of convergence properties of this result but also given the fact that 
+the integrals we are interested involve other Gaussian functions but also 
+may involve oscillatory term - this is something which could be approached in 
+different ways: purely imaginary $PQ^{-1}$, a new rule for a different weight?, 
+turn into stationary phase-integrals. The following example indeed demonstrates the 
+difficulties that arise as the function becomes highly oscillatory and how the 
+oscillatory term affects the rate of convergence (\textcolor{red}{but what about the 
+constants?})
+\\ 
+\\
+Let 
+\begin{equation}
+  \begin{split}
+    f(x; b) := 
+    \exp
+    \left\{ 
+      - \frac{x^2}{2}
+      +
+    i \sqrt{2}b x
+    \right\}
+  \end{split}
+\end{equation}
+where $b \in \mathbb{R}$ will be taken to be non-negative for convenience.
+For an Hermite basis of the form (...) the coefficients in the expansion are given by 
+\begin{equation}
+  \begin{split}
+  c_k = \pi^{1/4} 
+  \exp\left\{-\frac{b^2}{2}\right\}
+  \frac{i^k b^k}{\sqrt{k!}}
+  \end{split}
+\end{equation}
+from which we have $|c_k| = C 
+  \frac{b^k}{\sqrt{k!}}$ where $C = \pi^{1/4} \exp\left\{-\frac{b^2}{2}\right\}$. 
+  The aim is to find an $r > 1$ -independent of $k$- such that 
+  $|c_k| \leq D (1+k)^{-r}$ for some $C \in \mathbb{R}$ - this condition is such that 
+  the result about convergence holds. Equivalently, find $r$ and $D \in \mathbb{R}$
+  such that 
+  \begin{equation}
+    1 < r \leq - \frac{1}{D} \frac{\log (b^k / \sqrt{k!})}{\log(1+k)}
+  \end{equation}
+  \begin{enumerate}
+    \item if $b < 1$, then $k=1$ leads to the largest value on the RHS
+  \end{enumerate}
+  \begin{figure}[h!]
+    \centering 
+    \input{~/NAQMD/tests/plots/hermite_oscillatory}
+  \end{figure} 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %
+  %
+  %
+  %
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{Gaussian Hermite Quadrature}
+  We have been running simple tests on functions such as 
+  $1,x,x^2$
+  \begin{enumerate}
+    \item Explain Gaussian quadrature rule and how it differs from more 
+      standard quadrature methods- say Riemann sums for example - rectangles 
+      of the same width, Simpson..
+    \item Comment on the theory - when is it accurate, exact, 
+    \item Test the method on Hagedorn wavepackets - 
+      say they should satisfy the orthogonality condition 
+      How many points does the theory require for it to be exact?
+    \item Talk about the evaluation of the polynomial using the 
+      efficient recurrence relation. Perhaps the derivation you have 
+      written avoids the issue of stability? to look into
+    \item There is something to comment about the quadrature rule. 
+      The points and the weights depend only on the number of nodes. 
+      Are these always symmetric about zero and are so the weights?
+  \end{enumerate}
+  Let $\varphi_k$ have the parameter set ...
+  Consider the following integrals 
+  \begin{equation}
+    \begin{split}
+      I_{lk} 
+      &:= 
+      \int_{\mathbb{R}}
+      \varphi_k \bar{\varphi_l}
+      dx
+      \\
+      &=
+      \int_{\mathbb{R}}
+      P_{k}(x)\bar{P}_l(x)
+      |\varphi_0|^2 dx
+      \\
+      &=
+      \int_{\mathbb{R}}
+      P_{k}(x)\bar{P}_l(x)
+      \exp\left(
+        -\frac{1}{2\epsilon}
+        x^2
+      \right) dx
+    \end{split}
+  \end{equation}
+  where the Hagedorn wavepackets are normalised.
+  do a change of variable to yield the desired form
+  $\int_{\mathbb{R}}f(x) dx $. In this case $f(x)$ is 
+  a polynomial of degree $k+l$ so how many points 
+  does the theory say I would require?
+  \section{Numerical results}
+  \subsection{Constant eigenvalues}
+  % LINEAR HAGEDORN PROJECTION FIGURE 
+  As our first example we consider the case of constant eigenvalues. 
+  By considering the potential matrix in the form of equation ... 
+  we can arbitrarily choose the form of $\rho(x)$. The trace is zero in 
+  this case. Given that the eigenvalues are constant we know that 
+  the evolution of the parameters suffices to describe the one level 
+  dynamics exactly, that is the initial coefficients do not change over 
+  time. In this way we remove any potential sources of error from numerical 
+  integration.
+  We consider the same system as in [reference Ben's paper] with ....
+  \subsubsection{Initial condition}
+  The initial condition is given at the crossing (not an avoided crossing nor a conical 
+  intersection but simply where the coupling term $\theta^\prime(x)$ peaks ?)
+  by 
+  \begin{equation}
+    \begin{split}
+      \hat{\psi}^+(\xi, t_c) 
+      &= 
+      (2 \pi \epsilon)^{-1/4}
+      \exp\left\{
+        - \frac{(\xi - p_0)^2 }{ 4 \epsilon}
+      \right\}
+      \\
+      &=
+      \varphi^{\epsilon}_{0}\left[\Pi\right](\xi)
+    \end{split}
+  \end{equation}
+  where $\Pi = \left[p_0, 0, \sqrt{2}, \frac{i}{\sqrt{2}}\right]$
+  Application of the Superadiabatic formula yields 
+  \begin{equation}
+    \begin{split}
+      \hat{\psi}^{-}(\xi,t_c)
+      &=
+      \sin\left(\frac{\pi}{2 \gamma}\right)
+      \Theta(\xi^2 - 4\delta)
+      \frac{v + \xi}{2|v|} \times
+      \\
+      &
+      \hspace{1cm}
+      \exp\left\{-i q_c \frac{|\xi - v|}{2\delta \epsilon } \right\} 
+      \varphi^{\epsilon}_{0}\left[\Pi\right](v)
+    \end{split}
+  \end{equation}
+  \textcolor{red}{I would have a graph here showing the incoming wavepacket and the 
+  transmitted wavepacket}
+  \begin{figure}[h!]
+    \centering
+    \scalebox{0.8}{
+    \input{~/NAQMD/examples/Linear/plots/hagedorn_linear_wavepacket_crossing_transmitted}
+    }
+    \caption{..}
+    \label{figure}
+  \end{figure}
+  The question now is how to project the transmitted wavepacket onto an Hagedorn basis
+  $\left\{\varphi_k\right\}_{k \in \mathcal{K}}$
+  with parameters $\Pi^\prime = \left[p_0^\prime, 0, \sqrt{2}, \frac{i}{\sqrt{2}}\right]$
+  In particular, how large should $\mathcal{K}$ be in order for the $L^2$ (relative) error 
+  to be less than $\mathcal{TOL}$. The integrals we need to compute are 
+  \begin{equation}
+    \begin{split}
+      c_k 
+      = 
+      \int_{\mathbb{R}}
+      \hat{\psi}^{-}(\xi, t_c) 
+      H_k 
+      \varphi_0^\epsilon [\Pi^\prime] (\xi)
+      d\xi 
+    \end{split}
+  \end{equation}
+  where if solved with Gauss-Hermite quadrature we must have 
+  $f(x)=..$ and $w(x) = \varphi^\epsilon_0[\Pi^\prime]$
+  \textcolor{red}{what I would do is verify that the general 
+  formula you have derived in the previous section yields the same 
+  result that you obtain by doing it explicitly}
+  % LINEAR HAGEDORN PROJECTION FIGURE 
+  \begin{figure}[h!]
+    \centering
+    \scalebox{0.9}{
+    \input{~/NAQMD/examples/Linear/plots/linear_hagedorn_projection_convergence}
+    }
+    \caption{..}
+    \label{figure}
+  \end{figure}
+  \begin{figure}[h!]
+    \centering
+    \scalebox{0.9}{
+    \input{~/NAQMD/examples/Linear/plots/linear_hagedorn_projection_error_analysis}
+    }
+    \caption{..}
+    \label{figure}
+  \end{figure}
+  
+  \clear
   \newpage
   \printbibliography
   \begin{appendices}
